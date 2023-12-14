@@ -2,6 +2,9 @@ import { StyleSheet } from "react-native";
 import { colors, fontSize, sizes } from "../../services";
 
 export const styles = StyleSheet.create({
+  topMainContainer:{
+    color:colors.white,
+  },
     MainCartView: {
         padding: sizes.screenWidth * 0.03,
         marginTop: sizes.screenHeight * 0.02,

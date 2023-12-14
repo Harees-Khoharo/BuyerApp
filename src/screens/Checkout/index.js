@@ -7,6 +7,7 @@ import images from "../../services/utilities/images";
 export default function Checkout() {
   return (
     <SafeAreaView>
+      <View style={styles.topMainContainer}>
         <Header backImage={images.backArrow} title={'Checkout'} />
       <Text style={styles.heading}>Shipping address</Text>
       <View style={styles.MainCartView}>
@@ -62,6 +63,7 @@ export default function Checkout() {
           style={styles.bottomBtn}>
           <Text style={styles.bottomBtnText}>Submit Order</Text>
         </TouchableOpacity>
+        </View>
     </SafeAreaView>
   );
 }
