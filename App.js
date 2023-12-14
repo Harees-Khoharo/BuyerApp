@@ -6,15 +6,17 @@ import PaymentMethods from './src/screens/PaymentMethods'
 import ShippingAddresses from './src/screens/ShippingAddresses'
 import AddShippingAddress from './src/screens/AddShippingAddress'
 import Success from './src/screens/Success'
+import Home from './src/screens/Home'
 
 export default function App() {
   return (
     <SafeAreaView>
       {/* <Checkout/> */}
       {/* <PaymentMethods/> */}
-      <ShippingAddresses/>
+      {/* <ShippingAddresses/> */}
       {/* <AddShippingAddress/> */}
       {/* <Success/> */}
+      <Home/>
     </SafeAreaView>
   )
 }
