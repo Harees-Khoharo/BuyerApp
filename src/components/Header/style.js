@@ -6,7 +6,7 @@ export const styles = StyleSheet.create({
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center",
-    backgroundColor: "white",
+    // backgroundColor: "white",
     marginTop: sizes.screenHeight * 0.03,
     paddingHorizontal: sizes.screenWidth * 0.04,
     
@@ -18,8 +18,8 @@ export const styles = StyleSheet.create({
   },
   cartImgSty: {
     resizeMode: "contain",
-    width: sizes.screenWidth * 0.1,
-    height: sizes.screenWidth * 0.1,
+    width: sizes.screenWidth * 0.07,
+    height: sizes.screenWidth * 0.07,
   },
   headerText: {
     fontSize: fontSize.large,

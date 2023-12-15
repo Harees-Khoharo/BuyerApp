@@ -47,6 +47,7 @@ export const colors = {
   textGreyDark: '#4C5559',
   lightBlue: '#d5dfec',
   bglightblue: '#E5E8EA',
-  labelBdColor:'#F3F5F8'
+  labelBdColor:'#F3F5F8',
+  purple:'#2716F0'
   };
   

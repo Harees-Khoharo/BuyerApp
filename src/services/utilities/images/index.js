@@ -7,6 +7,7 @@ import checkboxon from '../../../assets/checkboxon.png';
 import checkboxoff from '../../../assets/checkboxoff.png';
 import card from '../../../assets/card.png';
 import cardTwo from '../../../assets/cardTwo.png';
+import cartTwo from '../../../assets/cartTwo.png';
 import plus from '../../../assets/plus.png';
 import mastercardTwo from '../../../assets/mastercardTwo.png';
 import rightArrow from '../../../assets/rightArrow.png';
@@ -28,6 +29,31 @@ import appliances from '../../../assets/appliances.png';
 import toiletries from '../../../assets/toiletries.png';
 import wear from '../../../assets/wear.png';
 import furniture from '../../../assets/furniture.png';
+import bellicon from '../../../assets/bellicon.png';
+import payment from '../../../assets/payment.png';
+import order from '../../../assets/order.png';
+import message from '../../../assets/message.png';
+import logout from '../../../assets/logout.png';
+import invite from '../../../assets/invite.png';
+import setting from '../../../assets/setting.png';
+import help from '../../../assets/help.png';
+import privacy from '../../../assets/privacy.png';
+import profileEdit from '../../../assets/profileEdit.png';
+import balance from '../../../assets/balance.png';
+import address from '../../../assets/address.png';
+import profile from '../../../assets/profile.png';
+import threeDot from '../../../assets/threeDot.png';
+import book from '../../../assets/book.png';
+import visaCard from '../../../assets/visaCard.png';
+import calender from '../../../assets/calender.png';
+import downArrow from '../../../assets/downArrow.png';
+import flag from '../../../assets/flag.png';
+import email from '../../../assets/email.png';
+import notiCross from '../../../assets/notiCross.png';
+import notiHeader from '../../../assets/notiHeader.png';
+import notiTick from '../../../assets/notiTick.png';
+import notiTicket from '../../../assets/notiTicket.png';
+import notiWallet from '../../../assets/notiWallet.png';
 
 const images = {
   dhl,
@@ -60,6 +86,32 @@ const images = {
   toiletries,
   wear,
   furniture,
+  bellicon,
+  payment,
+  order,
+  message,
+  logout,
+  invite,
+  setting,
+  help,
+  privacy,
+  profileEdit,
+  balance,
+  address,
+  profile,
+  threeDot,
+  book,
+  visaCard,
+  calender,
+  downArrow,
+  email,
+  flag,
+  notiCross,
+  notiHeader,
+  notiTick,
+  notiTicket,
+  notiWallet,
+  cartTwo,
 };
 
 export default images;
