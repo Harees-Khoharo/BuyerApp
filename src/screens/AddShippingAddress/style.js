@@ -1,5 +1,5 @@
-import {StyleSheet} from 'react-native';
-import {colors, fontSize, sizes} from '../../services';
+import { StyleSheet } from "react-native";
+import { colors, fontSize, sizes } from "../../services";
 
 export const styles = StyleSheet.create({
   container: {
@@ -9,7 +9,7 @@ export const styles = StyleSheet.create({
   },
   mainContainer: {
     paddingHorizontal: sizes.screenWidth * 0.05,
-    marginTop:sizes.screenHeight * 0.04
+    marginTop: sizes.screenHeight * 0.04,
   },
   MainCartView: {
     paddingHorizontal: sizes.screenWidth * 0.06,
@@ -17,7 +17,7 @@ export const styles = StyleSheet.create({
     height: sizes.screenHeight * 0.08,
     borderRadius: sizes.screenWidth * 0.01,
     backgroundColor: colors.white,
-    shadowColor: '#000000',
+    shadowColor: "#000000",
     shadowOffset: {
       width: 0,
       height: 3,
@@ -26,45 +26,43 @@ export const styles = StyleSheet.create({
     shadowRadius: 3.05,
     elevation: 4,
   },
-  labelName:{
-    fontSize:fontSize.small,
-    paddingTop:sizes.screenHeight * 0.01,
-    paddingLeft:sizes.screenWidth * 0.01,
-
+  labelName: {
+    fontSize: fontSize.small,
+    paddingLeft: sizes.screenWidth * 0.01,
   },
-  inputField:{
-    color:colors.black,
-    width:sizes.screenWidth * 0.7,
-    height:sizes.screenHeight * 0.045,
+  inputField: {
+    color: colors.black,
+    width: sizes.screenWidth * 0.7,
+    bottom: sizes.screenHeight * 0.02,
   },
-  inputFieldName:{
+  inputFieldName: {
     // backgroundColor:'red',
-    color:colors.black,
-    width:sizes.screenWidth * 0.7,
-    height:sizes.screenHeight * 0.045,
-    marginTop:sizes.screenHeight * 0.02
+    color: colors.black,
+    width: sizes.screenWidth * 0.7,
+    // height: sizes.screenHeight * 0.045,
+    marginTop: sizes.screenHeight * 0.011,
   },
-  row:{
-    flexDirection:'row',
-    justifyContent:'space-between',
+  row: {
+    flexDirection: "row",
+    justifyContent: "space-between",
   },
-  arrowSizing:{
-    resizeMode:'contain',
-    width:sizes.screenWidth * 0.03,
-    height:sizes.screenWidth * 0.03,
+  arrowSizing: {
+    resizeMode: "contain",
+    width: sizes.screenWidth * 0.03,
+    height: sizes.screenWidth * 0.03,
   },
   bottomBtn: {
     marginLeft: sizes.screenWidth * 0.01,
     marginTop: sizes.screenHeight * 0.05,
-    borderRadius:sizes.screenWidth * 0.1,    
+    borderRadius: sizes.screenWidth * 0.1,
     height: sizes.screenHeight * 0.06,
-    backgroundColor:colors.btnBlue,
+    backgroundColor: colors.btnBlue,
     width: sizes.screenHeight * 0.44,
-    justifyContent:'center'
+    justifyContent: "center",
   },
-  bottomBtnText:{
-    color:colors.white,
-    fontSize:fontSize.medium,
-    textAlign:'center',
+  bottomBtnText: {
+    color: colors.white,
+    fontSize: fontSize.medium,
+    textAlign: "center",
   },
-   })
+});

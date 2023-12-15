@@ -10,14 +10,14 @@ import React, { useState } from "react";
 import images from "../../services/utilities/images";
 import Header from "../../components/Header";
 import { styles } from "./style";
-import { colors } from "../../services";
+import { colors, sizes } from "../../services";
 import Modal from "react-native-modal";
 
 export default function CardInfo() {
   const [threeDotClick, setThreeDotClick] = useState(false);
   const [isModalVisible, setIsModalVisible] = useState(false);
   return (
-    <SafeAreaView>
+    <SafeAreaView  style={{ backgroundColor: colors.white, height: sizes.screenHeight }}>
       <View style={styles.mainContainer}>
         <Header backImage={images.backArrow} title={"Back"} />
         <TouchableOpacity

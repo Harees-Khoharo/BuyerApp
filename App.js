@@ -36,7 +36,7 @@ export default function App() {
       {/* <Order/> */}
       {/* <HelpCenter/> */}
       {/* <Privacy/> */}
-      <EditProfile />
+      {/* <EditProfile /> */}
     </SafeAreaView>
   )
 }

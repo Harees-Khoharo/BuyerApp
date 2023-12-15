@@ -12,14 +12,16 @@ import { styles } from "./style";
 import Header from "../../components/Header";
 import images from "../../services/utilities/images";
 import { Modal } from "react-native";
-import { colors } from "../../services";
+import { colors, sizes } from "../../services";
 
 export default function PaymentMethods() {
   const [cardStatus, setCardStatus] = useState("");
   const [checkBox, setCheckBox] = useState(false);
   const [isModalVisisble, setIsModalVisisble] = useState(false);
   return (
-    <SafeAreaView>
+    <SafeAreaView
+      style={{ backgroundColor: colors.white, height: sizes.screenHeight }}
+    >
       <ImageBackground style={styles.container}>
         <Header title={"Payment methods"} backImage={images.backArrow} />
         <View style={styles.mainContainer}>
@@ -70,7 +72,7 @@ export default function PaymentMethods() {
         </View>
         <Modal
           visible={isModalVisisble}
-            // isVisible={isModalVisisble}
+          // isVisible={isModalVisisble}
           backdropOpacity={0.1}
           onBackdropPress={() => setIsModalVisisble(false)}
         >
@@ -119,22 +121,20 @@ export default function PaymentMethods() {
                 <Image source={images.help} style={styles.imageSize} />
               </View>
               <View style={styles.row2}>
-            <TouchableOpacity
-              onPress={() => {
-                setCheckBox(!checkBox);
-              }}
-            >
-              <Image
-                source={
-                  checkBox ? images.checkboxon : images.checkboxoff
-                }
-                style={styles.checkBox}
-              />
-            </TouchableOpacity>
-            <Text style={styles.headingSty2}>
-              Set as default payment method
-            </Text>
-          </View>
+                <TouchableOpacity
+                  onPress={() => {
+                    setCheckBox(!checkBox);
+                  }}
+                >
+                  <Image
+                    source={checkBox ? images.checkboxon : images.checkboxoff}
+                    style={styles.checkBox}
+                  />
+                </TouchableOpacity>
+                <Text style={styles.headingSty2}>
+                  Set as default payment method
+                </Text>
+              </View>
               <TouchableOpacity
                 onPress={() => setIsModalVisisble(false)}
                 style={styles.modalBottomBtn}

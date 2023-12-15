@@ -3,7 +3,7 @@ import { colors, fontSize, sizes } from "../../services";
 
 export const styles = StyleSheet.create({
     container:{
-        color:colors.white,
+        backgroundColor:colors.white,
     },
     topRowView:{
         flexDirection:'row',

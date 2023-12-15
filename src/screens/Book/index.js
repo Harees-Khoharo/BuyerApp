@@ -9,10 +9,13 @@ import React from "react";
 import { styles } from "./style";
 import Header from "../../components/Header";
 import images from "../../services/utilities/images";
+import { colors, sizes } from "../../services";
 
 export default function Book() {
   return (
-    <SafeAreaView>
+    <SafeAreaView
+      style={{ backgroundColor: colors.white, height: sizes.screenHeight }}
+    >
       <Header
         backImage={images.backArrow}
         title={"Book"}

@@ -10,7 +10,7 @@ export default function Notification({navigation}) {
     <SafeAreaView>
       <View style={styles.MainContainer}>
         <View style={styles.mainView}>
-          <Header title={'Notifications'} />
+          <Header backImage={images.backArrow} title={'Notifications'} />
           <TouchableOpacity>
             <Image source={images.notiHeader} style={styles.headerImg} />
           </TouchableOpacity>
