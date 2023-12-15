@@ -29,7 +29,7 @@ export default function App() {
       {/* <AddShippingAddress/> */}
       {/* <Success/> */}
       {/* <Home/> */}
-      {/* <Profile/> */}
+      <Profile/>
       {/* <Book/> */}
       {/* <Information/> */}
       {/* <CardInfo/> */}
