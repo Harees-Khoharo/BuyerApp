@@ -9,11 +9,14 @@ import React, { useState } from "react";
 import Header from "../../components/Header";
 import images from "../../services/utilities/images";
 import { styles } from "./style";
+import { colors, sizes } from "../../services";
 
 export default function Order() {
   const [onOrder, setOnOrder] = useState("OngoingOrders");
   return (
-    <SafeAreaView>
+    <SafeAreaView
+      style={{ backgroundColor: colors.white, height: sizes.screenHeight }}
+    >
       <Header backImage={images.backArrow} title={"Orders"} />
       <View style={styles.mainContainer}>
         <View style={styles.firstView}>
@@ -25,9 +28,9 @@ export default function Order() {
           </TouchableOpacity>
         </View>
         {onOrder === "OngoingOrders" ? (
-        <View style={styles.horizontailLine}></View>
+          <View style={styles.horizontailLine}></View>
         ) : (
-            <View style={styles.horizontailLine2}></View>
+          <View style={styles.horizontailLine2}></View>
         )}
         {onOrder === "OngoingOrders" ? (
           <View>

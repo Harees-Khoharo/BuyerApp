@@ -16,6 +16,7 @@ import Notification from './src/screens/Notification'
 import Order from './src/screens/Order'
 import HelpCenter from './src/screens/HelpCenter'
 import Privacy from './src/screens/Privacy'
+import EditProfile from './src/screens/EditProfile'
 
 export default function App() {
   return (
@@ -34,7 +35,8 @@ export default function App() {
       {/* <Notification/> */}
       {/* <Order/> */}
       {/* <HelpCenter/> */}
-      <Privacy/>
+      {/* <Privacy/> */}
+      <EditProfile />
     </SafeAreaView>
   )
 }

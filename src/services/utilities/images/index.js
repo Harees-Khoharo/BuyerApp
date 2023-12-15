@@ -62,6 +62,9 @@ import website from "../../../assets/website.png";
 import whatsApp from "../../../assets/whatsApp.png";
 import upArrow from "../../../assets/upArrow.png";
 import leftArrowIcon from "../../../assets/leftArrowIcon.png";
+import notificationSetting from "../../../assets/notificationSetting.png";
+import password from "../../../assets/password.png";
+import recycle from "../../../assets/recycle.png";
 
 const images = {
   dhl,
@@ -128,6 +131,9 @@ const images = {
   whatsApp,
   upArrow,
   leftArrowIcon,
+  notificationSetting,
+  password,
+  recycle
 };
 
 export default images;

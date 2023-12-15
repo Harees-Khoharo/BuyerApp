@@ -10,6 +10,7 @@ import React, { useState } from "react";
 import Header from "../../components/Header";
 import images from "../../services/utilities/images";
 import { styles } from "./style";
+import { colors } from "../../services";
 
 export default function Profile() {
   const [profileSettings, setProfileSettings] = useState([
@@ -29,7 +30,7 @@ export default function Profile() {
     { logo: images.logout, name: "Log out", arrow: images.rightArrow },
   ]);
   return (
-    <SafeAreaView>
+    <SafeAreaView style={{backgroundColor:colors.white}}>
       <ScrollView>
       <Header
         backImage={images.backArrow}
