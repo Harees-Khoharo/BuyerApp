@@ -65,6 +65,10 @@ import leftArrowIcon from "../../../assets/leftArrowIcon.png";
 import notificationSetting from "../../../assets/notificationSetting.png";
 import password from "../../../assets/password.png";
 import recycle from "../../../assets/recycle.png";
+import wallet from "../../../assets/wallet.png";
+import add from "../../../assets/add.png";
+import inviteBtn from "../../../assets/inviteBtn.png";
+import user from "../../../assets/user.png";
 
 const images = {
   dhl,
@@ -133,7 +137,11 @@ const images = {
   leftArrowIcon,
   notificationSetting,
   password,
-  recycle
+  recycle,
+  wallet,
+  add,
+  inviteBtn,
+  user
 };
 
 export default images;
