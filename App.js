@@ -19,6 +19,7 @@ import Privacy from "./src/screens/Privacy";
 import EditProfile from "./src/screens/EditProfile";
 import AddPaymentMethod from "./src/screens/AddPaymentMethod";
 import InviteFriends from "./src/screens/InviteFriends";
+import MessageList from "./src/screens/MessageList";
 
 export default function App() {
   return (
@@ -40,7 +41,8 @@ export default function App() {
       {/* <Privacy/> */}
       {/* <EditProfile /> */}
       {/* <AddPaymentMethod /> */}
-      <InviteFriends />
+      {/* <InviteFriends /> */}
+      <MessageList />
     </SafeAreaView>
   );
 }
