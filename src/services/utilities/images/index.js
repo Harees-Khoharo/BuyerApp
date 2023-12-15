@@ -1,57 +1,35 @@
-import landingBg from '../../../assets/landingBg.png';
-import bg from '../../../assets/bg.png';
-import btnRed from '../../../assets/btnRed.png';
-import btnBlack from '../../../assets/btnBlack.png';
-import backBtn from '../../../assets/backBtn.png';
-import socialBtn from '../../../assets/socialBtn.png';
-import chatBg from '../../../assets/chatBg.png';
-import rightArrow from '../../../assets/rightArrow.png';
-import profileBg from '../../../assets/profileBg.png';
-import user from '../../../assets/user.png';
-import disableBtn from '../../../assets/disableBtn.png';
-import containerBg from '../../../assets/containerBg.png';
-import insta from '../../../assets/insta.png';
-import facebook from '../../../assets/facebook.png';
-import twitter from '../../../assets/twitter.png';
-import youtube from '../../../assets/youtube.png';
-import support from '../../../assets/support.png';
-import email from '../../../assets/email.png';
-import editProfile from '../../../assets/editProfile.png';
-import notification from '../../../assets/notification.png';
-import language from '../../../assets/language.png';
-import security from '../../../assets/security.png';
-import contact from '../../../assets/contact.png';
-import privacy from '../../../assets/privacy.png';
-import logout from '../../../assets/logout.png';
-import editProfileBg from '../../../assets/editProfileBg.png';
+import appleIcon from '../../../assets/appleIcon.png';
+import crossIcon from '../../../assets/crossIcon.png';
+import crossRedIcon from '../../../assets/crossRedIcon.png';
+import dropdownIcon from '../../../assets/dropdownIcon.png';
+import fbIcon from '../../../assets/fbIcon.png';
+import googleIcon from '../../../assets/googleIcon.png';
+import grenTick from '../../../assets/grenTick.png';
+import landingImg from '../../../assets/landingImg.png';
+import leftIcon from '../../../assets/leftIcon.png';
+import locationIcon from '../../../assets/locationIcon.png';
+import nextIcon from '../../../assets/nextIcon.png';
+import phoneIcon from '../../../assets/phoneIcon.png';
+import rightArrowRed from '../../../assets/rightArrowRed.png';
+import searchIcon from '../../../assets/searchIcon.png';
+import usFlag from '../../../assets/usFlag.png';
 
 const images = {
-  landingBg,
-  bg,
-  btnRed,
-  btnBlack,
-  backBtn,
-  socialBtn,
-  chatBg,
-  rightArrow,
-  profileBg,
-  user,
-  disableBtn,
-  containerBg,
-  insta,
-  facebook,
-  twitter,
-  youtube,
-  support,
-  email,
-  editProfile,
-  notification,
-  language,
-  security,
-  contact,
-  privacy,
-  logout,
-  editProfileBg,
+  appleIcon,
+  crossIcon,
+  crossRedIcon,
+  dropdownIcon,
+  fbIcon,
+  googleIcon,
+  grenTick,
+  landingImg,
+  leftIcon,
+  locationIcon,
+  nextIcon,
+  phoneIcon,
+  rightArrowRed,
+  searchIcon,
+  usFlag,
 };
 
 export default images;
