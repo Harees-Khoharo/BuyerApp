@@ -69,13 +69,21 @@ import wallet from "../../../assets/wallet.png";
 import add from "../../../assets/add.png";
 import inviteBtn from "../../../assets/inviteBtn.png";
 import user from "../../../assets/user.png";
-import message1 from '../../../assets/message1.png';
-import message2 from '../../../assets/message2.png';
-import message3 from '../../../assets/message3.png';
-import message4 from '../../../assets/message4.png';
-import message5 from '../../../assets/message5.png';
-import message6 from '../../../assets/message6.png';
-import message7 from '../../../assets/message7.png';
+import message1 from "../../../assets/message1.png";
+import message2 from "../../../assets/message2.png";
+import message3 from "../../../assets/message3.png";
+import message4 from "../../../assets/message4.png";
+import message5 from "../../../assets/message5.png";
+import message6 from "../../../assets/message6.png";
+import message7 from "../../../assets/message7.png";
+import phoneImg from "../../../assets/phoneImg.png";
+import contblue from "../../../assets/contblue.png";
+import contblack1 from "../../../assets/contblack1.png";
+import contblue2 from "../../../assets/contblue2.png";
+import contblack2 from "../../../assets/contblack2.png";
+import clip from "../../../assets/clip.png";
+import mic from "../../../assets/mic.png";
+
 const images = {
   dhl,
   usps,
@@ -155,6 +163,13 @@ const images = {
   message5,
   message6,
   message7,
+  phoneImg,
+  contblue,
+  contblack1,
+  contblue2,
+  contblack2,
+  clip,
+  mic
 };
 
 export default images;

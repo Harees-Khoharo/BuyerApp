@@ -20,6 +20,7 @@ import EditProfile from "./src/screens/EditProfile";
 import AddPaymentMethod from "./src/screens/AddPaymentMethod";
 import InviteFriends from "./src/screens/InviteFriends";
 import MessageList from "./src/screens/MessageList";
+import ChatRequest from "./src/screens/ChatRequest";
 
 export default function App() {
   return (
@@ -42,7 +43,8 @@ export default function App() {
       {/* <EditProfile /> */}
       {/* <AddPaymentMethod /> */}
       {/* <InviteFriends /> */}
-      <MessageList />
+      {/* <MessageList /> */}
+      <ChatRequest />
     </SafeAreaView>
   );
 }
