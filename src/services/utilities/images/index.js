@@ -83,6 +83,8 @@ import contblue2 from "../../../assets/contblue2.png";
 import contblack2 from "../../../assets/contblack2.png";
 import clip from "../../../assets/clip.png";
 import mic from "../../../assets/mic.png";
+import profile2 from "../../../assets/profile2.png";
+import trackImg from "../../../assets/trackImg.png";
 
 const images = {
   dhl,
@@ -169,7 +171,9 @@ const images = {
   contblue2,
   contblack2,
   clip,
-  mic
+  mic,
+  profile2,
+  trackImg,
 };
 
 export default images;

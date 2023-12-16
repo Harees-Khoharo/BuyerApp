@@ -21,6 +21,7 @@ import AddPaymentMethod from "./src/screens/AddPaymentMethod";
 import InviteFriends from "./src/screens/InviteFriends";
 import MessageList from "./src/screens/MessageList";
 import ChatRequest from "./src/screens/ChatRequest";
+import Booking from "./src/screens/Booking";
 
 export default function App() {
   return (
@@ -44,7 +45,8 @@ export default function App() {
       {/* <AddPaymentMethod /> */}
       {/* <InviteFriends /> */}
       {/* <MessageList /> */}
-      <ChatRequest />
+      {/* <ChatRequest /> */}
+      <Booking />
     </SafeAreaView>
   );
 }
