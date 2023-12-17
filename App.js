@@ -22,10 +22,27 @@ import InviteFriends from "./src/screens/InviteFriends";
 import MessageList from "./src/screens/MessageList";
 import ChatRequest from "./src/screens/ChatRequest";
 import Booking from "./src/screens/Booking";
+import Landing from "./src/screens/Landing";
+import SignUp from "./src/screens/SignUp";
+import LogIn from "./src/screens/LogIn";
+import ForgotPassword from "./src/screens/ForgotPassword";
+import Authentication from "./src/screens/Authentication";
+import Verification from "./src/screens/Verification";
+import NewPassword from "./src/screens/NewPassword";
 
 export default function App() {
   return (
     <SafeAreaView>
+      {/* ------------------------ */}
+      {/* <Landing /> */}
+      {/* <SignUp /> */}
+      {/* <LogIn /> */}
+      {/* <ForgotPassword /> */}
+      {/* <Authentication /> */}
+      {/* <Verification /> */}
+      <NewPassword />
+      {/* ------------------------ */}
+
       {/* <Checkout/> */}
       {/* <PaymentMethods/> */}
       {/* <ShippingAddresses/> */}
@@ -46,7 +63,7 @@ export default function App() {
       {/* <InviteFriends /> */}
       {/* <MessageList /> */}
       {/* <ChatRequest /> */}
-      <Booking />
+      {/* <Booking /> */}
+     
     </SafeAreaView>
-  );
-}
+  )}
