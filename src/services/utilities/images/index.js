@@ -85,6 +85,11 @@ import clip from "../../../assets/clip.png";
 import mic from "../../../assets/mic.png";
 import profile2 from "../../../assets/profile2.png";
 import trackImg from "../../../assets/trackImg.png";
+import trackOrder from "../../../assets/trackOrder.png";
+import cancelOrder from "../../../assets/cancelOrder.png";
+import leaveReview from "../../../assets/leaveReview.png";
+import completed from "../../../assets/completed.png";
+import cancelled from "../../../assets/cancelled.png";
 
 const images = {
   dhl,
@@ -174,6 +179,11 @@ const images = {
   mic,
   profile2,
   trackImg,
+  trackOrder,
+  cancelOrder,
+  leaveReview,
+  completed,
+  cancelled,
 };
 
 export default images;
