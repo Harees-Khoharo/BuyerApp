@@ -29,6 +29,7 @@ import ForgotPassword from "./src/screens/ForgotPassword";
 import Authentication from "./src/screens/Authentication";
 import Verification from "./src/screens/Verification";
 import NewPassword from "./src/screens/NewPassword";
+import PasswordManager from "./src/screens/PasswordManager";
 
 export default function App() {
   return (
@@ -40,7 +41,7 @@ export default function App() {
       {/* <ForgotPassword /> */}
       {/* <Authentication /> */}
       {/* <Verification /> */}
-      <NewPassword />
+      {/* <NewPassword /> */}
       {/* ------------------------ */}
 
       {/* <Checkout/> */}
@@ -53,17 +54,18 @@ export default function App() {
       {/* <Book/> */}
       {/* <Information/> */}
       {/* <CardInfo/> */}
-      {/* <EditMyProfile/> */}
       {/* <Notification/> */}
       {/* <Order/> */}
-      {/* <HelpCenter/> */}
-      {/* <Privacy/> */}
+      {/* <EditMyProfile/> */}
       {/* <EditProfile /> */}
       {/* <AddPaymentMethod /> */}
+      <PasswordManager />
+      {/* <HelpCenter/> */}
+      {/* <Privacy/> */}
       {/* <InviteFriends /> */}
       {/* <MessageList /> */}
       {/* <ChatRequest /> */}
       {/* <Booking /> */}
-     
     </SafeAreaView>
-  )}
+  );
+}
