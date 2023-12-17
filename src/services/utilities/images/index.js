@@ -90,21 +90,35 @@ import cancelOrder from "../../../assets/cancelOrder.png";
 import leaveReview from "../../../assets/leaveReview.png";
 import completed from "../../../assets/completed.png";
 import cancelled from "../../../assets/cancelled.png";
-import appleIcon from '../../../assets/appleIcon.png';
-import crossIcon from '../../../assets/crossIcon.png';
-import crossRedIcon from '../../../assets/crossRedIcon.png';
-import dropdownIcon from '../../../assets/dropdownIcon.png';
-import fbIcon from '../../../assets/fbIcon.png';
-import googleIcon from '../../../assets/googleIcon.png';
-import grenTick from '../../../assets/grenTick.png';
-import landingImg from '../../../assets/landingImg.png';
-import leftIcon from '../../../assets/leftIcon.png';
-import locationIcon from '../../../assets/locationIcon.png';
-import nextIcon from '../../../assets/nextIcon.png';
-import phoneIcon from '../../../assets/phoneIcon.png';
-import rightArrowRed from '../../../assets/rightArrowRed.png';
-import searchIcon from '../../../assets/searchIcon.png';
-import usFlag from '../../../assets/usFlag.png';
+import appleIcon from "../../../assets/appleIcon.png";
+import crossIcon from "../../../assets/crossIcon.png";
+import crossRedIcon from "../../../assets/crossRedIcon.png";
+import dropdownIcon from "../../../assets/dropdownIcon.png";
+import fbIcon from "../../../assets/fbIcon.png";
+import googleIcon from "../../../assets/googleIcon.png";
+import grenTick from "../../../assets/grenTick.png";
+import landingImg from "../../../assets/landingImg.png";
+import leftIcon from "../../../assets/leftIcon.png";
+import locationIcon from "../../../assets/locationIcon.png";
+import nextIcon from "../../../assets/nextIcon.png";
+import phoneIcon from "../../../assets/phoneIcon.png";
+import rightArrowRed from "../../../assets/rightArrowRed.png";
+import searchIcon from "../../../assets/searchIcon.png";
+import usFlag from "../../../assets/usFlag.png";
+import nopoints from "../../../assets/nopoints.png";
+import heartFilled from "../../../assets/heartFilled.png";
+import heartFilled2 from "../../../assets/heartFilled2.png";
+import p1 from "../../../assets/p1.png";
+import p2 from "../../../assets/p2.png";
+import p3 from "../../../assets/p3.png";
+import p4 from "../../../assets/p4.png";
+import filter2 from "../../../assets/filter2.png";
+import swap from "../../../assets/swap.png";
+import grid from "../../../assets/grid.png";
+import list from "../../../assets/list.png";
+import close from "../../../assets/close.png";
+
+
 const images = {
   dhl,
   usps,
@@ -213,6 +227,18 @@ const images = {
   rightArrowRed,
   searchIcon,
   usFlag,
+  nopoints,
+  heartFilled,
+  heartFilled2,
+  p1,
+  p2,
+  p3,
+  p4,
+  filter2,
+  swap,
+  grid,
+  list,
+  close
 };
 
 export default images;
