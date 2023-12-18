@@ -5,6 +5,7 @@ export const styles = StyleSheet.create({
   mainView: {
     backgroundColor: colors.white,
     height:sizes.screenHeight,
+    width:sizes.screenWidth,
   },
   cartImgSty: {
     resizeMode: "contain",
@@ -139,40 +140,134 @@ export const styles = StyleSheet.create({
   btnView:{
     top:sizes.screenHeight*0.04,
     backgroundColor:colors.black,
-    height:sizes.screenHeight*0.05,
+    height:sizes.screenHeight*0.07,
     width:sizes.screenWidth*0.9,
     alignItems:'center',
     justifyContent:'center',
     alignSelf:'center',
     borderRadius:sizes.screenWidth*0.3
   },
-  //   quantityContainer: {
-  //     height: sizes.screenHeight * 0.04,
-  //     backgroundColor: colors.borderColor,
-  //     width: sizes.screenWidth * 0.2,
-  //     justifyContent: "space-between",
-  //     paddingLeft: sizes.screenWidth * 0.03,
-  //     paddingRight: sizes.screenWidth * 0.03,
-  //     flexDirection: "row",
-  //     alignItems: "center",
-  //     borderRadius: sizes.screenHeight * 0.05,
-  //   },
-
-  //   textQuantityMinus: {
-  //     color: colors.black,
-  //     fontSize: fontSize.large,
-  //     bottom: sizes.screenHeight * 0.008,
-  //   },
-
-  //   textQuantity: {
-  //     color: colors.black,
-  //     fontSize: fontSize.medium,
-  //     width: sizes.screenWidth * 0.06,
-  //     textAlign: "center",
-  //   },
-
-  //   textQuantityPlus: {
-  //     color: colors.black,
-  //     fontSize: fontSize.large,
-  //   },
+  modalMainView:{
+    backgroundColor:colors.white,
+    width:sizes.screenWidth * 1,
+    height:sizes.screenHeight * 0.6,
+    alignSelf:'center',
+    marginTop:sizes.screenHeight * 0.5,
+    borderTopRightRadius:sizes.screenWidth * 0.1,
+    borderTopLeftRadius:sizes.screenWidth * 0.1
+  },
+  modalText:{
+    color:colors.black,
+    fontSize:fontSize.large,
+    marginTop:sizes.screenHeight * 0.03
+  },
+  padding:{
+    paddingLeft:sizes.screenWidth * 0.04
+  },
+  horiLine:{
+    width:sizes.screenWidth * 0.19,
+    height:sizes.screenHeight * 0.01,
+    backgroundColor:colors.disabledBg3,
+    alignSelf:'center',
+    top:sizes.screenHeight * 0.015,
+    marginBottom:sizes.screenHeight * 0.02,
+    borderRadius:sizes.screenWidth * 0.3
+  },
+  row6:{
+    flexDirection:'row',
+    alignItems:'center',
+    shadowColor: '#000',
+    shadowOffset: {
+      width: 0,
+      height: 0,
+    },
+    shadowOpacity: 0.1,
+    shadowRadius: 0,
+    elevation: 3,
+    backgroundColor:'white',
+    borderRadius:sizes.screenWidth * 0.03,
+    width:sizes.screenWidth * 0.9,
+    marginTop:sizes.screenHeight * 0.02
+  },
+  discountImgSty:{
+    resizeMode:'contain',
+    width:sizes.screenWidth * 0.2,
+    height:sizes.screenHeight * 0.1,
+  },
+  bottomModaView:{
+    marginLeft:sizes.screenWidth * 0.04
+  },
+  bottomModaView2:{
+    alignItems:'center',
+    marginLeft:sizes.screenWidth * 0.15
+  },
+  modalTextSty:{
+    color:colors.black,
+  },
+  modalTextSty1:{
+    color:colors.disabledBg3,
+    fontSize:fontSize.small
+  },
+  modalTextSty2:{
+    color:colors.disabledBg3,
+    fontSize:fontSize.small
+  },
+  modalTextSt3:{
+    color:colors.white,
+    textAlign:'center',
+  },
+  modalBtn:{
+    backgroundColor:'#DB3022',
+    width:sizes.screenWidth * 0.23,
+    height:sizes.screenHeight * 0.05,
+    justifyContent:'center',
+    borderRadius:sizes.screenWidth * 0.3,
+    marginTop:sizes.screenHeight * 0.01
+  },
+  secondModalMainView:{
+    backgroundColor:colors.white,
+    width:sizes.screenWidth * 1,
+    height:sizes.screenHeight * 0.5,
+    alignSelf:'center',
+    marginTop:sizes.screenHeight * 0.67,
+    borderTopRightRadius:sizes.screenWidth * 0.1,
+    borderTopLeftRadius:sizes.screenWidth * 0.1
+  },
+  cartHeading:{
+    alignSelf:'center',
+    color:colors.black,
+    marginTop:sizes.screenHeight * 0.02,
+    fontSize:fontSize.extraLarge,
+    fontWeight:'bold'
+  },
+  modalRow:{
+    flexDirection:'row',
+    justifyContent:'space-evenly',
+    marginTop:sizes.screenHeight * 0.04
+  },
+  modalBtn1:{
+    borderWidth:1,
+    height:sizes.screenHeight * 0.07,
+    width:sizes.screenWidth * 0.35,
+    borderRadius:sizes.screenWidth * 0.3,
+    justifyContent:'center'
+  },
+  modalTextStyMod:{
+    color:colors.black,
+    textAlign:'center',
+    fontSize:fontSize.large
+  },
+  modalBtn2:{
+    borderWidth:1,
+    height:sizes.screenHeight * 0.07,
+    width:sizes.screenWidth * 0.35,
+    borderRadius:sizes.screenWidth * 0.3,
+    justifyContent:'center',
+    backgroundColor:colors.black
+  },
+  modalTextStyMod1:{
+    color:colors.white,
+    textAlign:'center',
+    fontSize:fontSize.large
+  },
 });

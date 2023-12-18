@@ -122,6 +122,9 @@ import myCartImgOne from "../../../assets/myCartImgOne.png";
 import myCartImgTwo from "../../../assets/myCartImgTwo.png";
 import plusTwo from "../../../assets/plusTwo.png";
 import minus from "../../../assets/minus.png";
+import discount from "../../../assets/discount.png";
+import discountTwo from "../../../assets/discountTwo.png";
+import discountThree from "../../../assets/discountThree.png";
 
 
 const images = {
@@ -137,7 +140,10 @@ const images = {
   plus,
   plusTwo,
   minus,
+  discount,
+  discountTwo,
   mastercardTwo,
+  discountThree,
   rightArrow,
   bags,
   camera,
