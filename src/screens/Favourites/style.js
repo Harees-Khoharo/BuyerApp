@@ -155,6 +155,11 @@ export const styles = StyleSheet.create({
     position: "absolute",
     right: sizes.screenWidth * 0.01,
   },
+  closeViewList: {
+    position: "absolute",
+    left: sizes.screenWidth * 0.6,
+    bottom: sizes.screenHeight * 0.08,
+  },
   percent: {
     color: colors.white,
     fontSize: fontSize.smallM,
@@ -163,6 +168,11 @@ export const styles = StyleSheet.create({
     resizeMode: "contain",
     width: sizes.screenWidth * 0.12,
     height: sizes.screenHeight * 0.06,
+  },
+  heartImgList: {
+    resizeMode: "contain",
+    width: sizes.screenWidth * 0.1,
+    height: sizes.screenHeight * 0.04,
   },
   closeImg: {
     resizeMode: "contain",
@@ -179,6 +189,13 @@ export const styles = StyleSheet.create({
     width: sizes.screenWidth * 0.28,
     height: sizes.screenHeight * 0.02,
     marginTop: sizes.screenHeight * 0.01,
+  },
+  ratingStyList: {
+    resizeMode: "contain",
+    width: sizes.screenWidth * 0.28,
+    height: sizes.screenHeight * 0.02,
+    top: sizes.screenHeight * 0.005,
+    left: sizes.screenWidth * 0.22,
   },
   ratingText: {
     color: colors.disabledBg3,
@@ -270,4 +287,38 @@ export const styles = StyleSheet.create({
     left: sizes.screenWidth * 0.02,
     fontSize: fontSize.medium,
   },
+  listProductImg: {
+    height: sizes.screenHeight * 0.13,
+    width: sizes.screenWidth * 0.25,
+    borderRadius: 10,
+  },
+  top2: {
+    marginTop: sizes.screenHeight * 0.03,
+  },
+  titleText: {
+    fontSize: fontSize.small,
+    left: sizes.screenWidth * 0.02,
+  },
+  costTextList: {
+    left: sizes.screenWidth * 0.02,
+    color: colors.black,
+    fontSize: fontSize.h6,
+    fontWeight: "500",
+  },
+  shirtLeft: {
+    left: sizes.screenWidth * 0.02,
+  },
+  sizeLeft: {
+    left: sizes.screenWidth * 0.06,
+  },
+  heartViewList: {
+    left: sizes.screenWidth * 0.23,
+    bottom: sizes.screenHeight * 0.02,
+  },
+  itemTop: {
+    marginTop: sizes.screenHeight * 0.01,
+  },
+  paddingBottom:{
+    paddingBottom:sizes.screenHeight*0.03
+  }
 });

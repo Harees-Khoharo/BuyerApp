@@ -228,9 +228,157 @@ export default function Favourites() {
               </View>
             </View>
           ) : (
-            <View>
+            <View style={styles.top2}>
+              <View style={[styles.row, styles.paddingBottom]}>
+                <Image source={images.p1} style={styles.listProductImg} />
+                <View style={styles.itemTop}>
+                  <Text style={[styles.ratingText, styles.titleText]}>
+                    LIME
+                  </Text>
+                  <Text style={[styles.ratingText1, styles.shirtLeft]}>
+                    Shirt
+                  </Text>
+                  <View style={[styles.row, styles.shirtLeft]}>
+                    <Text style={styles.ratingText2}>Color</Text>
+                    <Text style={styles.ratingText3}>Blue</Text>
+                    <View style={[styles.row, styles.sizeLeft]}>
+                      <Text style={styles.ratingText2}>Size</Text>
+                      <Text style={styles.ratingText3}>L</Text>
+                    </View>
+                  </View>
+                  <View style={[styles.row]}>
+                    <Text style={[styles.costTextList]}>32$</Text>
+                    <Image
+                      source={images.rating}
+                      style={styles.ratingStyList}
+                    />
+                    <TouchableOpacity style={styles.heartViewList}>
+                      <Image
+                        source={images.heartFilled}
+                        style={styles.heartImgList}
+                      />
+                    </TouchableOpacity>
+                  </View>
 
-                
+                  <TouchableOpacity style={styles.closeViewList}>
+                    <Image source={images.close} style={styles.closeImg} />
+                  </TouchableOpacity>
+                </View>
+              </View>
+              <View style={[styles.row, styles.paddingBottom]}>
+                <Image source={images.p2} style={styles.listProductImg} />
+                <View style={styles.newView}>
+                  <Text style={styles.percent}>NEW</Text>
+                </View>
+                <View style={styles.itemTop}>
+                  <Text style={[styles.ratingText, styles.titleText]}>
+                    Mango
+                  </Text>
+                  <Text style={[styles.ratingText1, styles.shirtLeft]}>
+                    Longsleeve Violeta
+                  </Text>
+                  <View style={[styles.row, styles.shirtLeft]}>
+                    <Text style={styles.ratingText2}>Color</Text>
+                    <Text style={styles.ratingText3}>Orange</Text>
+                    <View style={[styles.row, styles.sizeLeft]}>
+                      <Text style={styles.ratingText2}>Size</Text>
+                      <Text style={styles.ratingText3}>S</Text>
+                    </View>
+                  </View>
+                  <View style={[styles.row]}>
+                    <Text style={[styles.costTextList]}>46$</Text>
+                    <Image
+                      source={images.rating}
+                      style={styles.ratingStyList}
+                    />
+                    <TouchableOpacity style={styles.heartViewList}>
+                      <Image
+                        source={images.heartFilled}
+                        style={styles.heartImgList}
+                      />
+                    </TouchableOpacity>
+                  </View>
+
+                  <TouchableOpacity style={styles.closeViewList}>
+                    <Image source={images.close} style={styles.closeImg} />
+                  </TouchableOpacity>
+                </View>
+              </View>
+              <View style={[styles.row, styles.paddingBottom]}>
+                <Image source={images.p3} style={styles.listProductImg} />
+                <View style={styles.itemTop}>
+                  <Text style={[styles.ratingText, styles.titleText]}>
+                    Oliver
+                  </Text>
+                  <Text style={[styles.ratingText1, styles.shirtLeft]}>
+                    Shirt
+                  </Text>
+                  <View style={[styles.row, styles.shirtLeft]}>
+                    <Text style={styles.ratingText2}>Color</Text>
+                    <Text style={styles.ratingText3}>Gray</Text>
+                    <View style={[styles.row, styles.sizeLeft]}>
+                      <Text style={styles.ratingText2}>Size</Text>
+                      <Text style={styles.ratingText3}>L</Text>
+                    </View>
+                  </View>
+                  <View style={[styles.row]}>
+                    <Text style={[styles.costTextList]}>52$</Text>
+                    <Image
+                      source={images.rating}
+                      style={styles.ratingStyList}
+                    />
+                    <TouchableOpacity style={styles.heartViewList}>
+                      <Image
+                        source={images.heartFilled}
+                        style={styles.heartImgList}
+                      />
+                    </TouchableOpacity>
+                  </View>
+
+                  <TouchableOpacity style={styles.closeViewList}>
+                    <Image source={images.close} style={styles.closeImg} />
+                  </TouchableOpacity>
+                </View>
+              </View>
+              <View style={[styles.row, styles.paddingBottom]}>
+                <Image source={images.p4} style={styles.listProductImg} />
+                <View style={styles.percentView}>
+                  <Text style={styles.percent}>-30%</Text>
+                </View>
+                <View style={styles.itemTop}>
+                  <Text style={[styles.ratingText, styles.titleText]}>
+                    &Berries
+                  </Text>
+                  <Text style={[styles.ratingText1, styles.shirtLeft]}>
+                    T-Shirt
+                  </Text>
+                  <View style={[styles.row, styles.shirtLeft]}>
+                    <Text style={styles.ratingText2}>Color</Text>
+                    <Text style={styles.ratingText3}>Black</Text>
+                    <View style={[styles.row, styles.sizeLeft]}>
+                      <Text style={styles.ratingText2}>Size</Text>
+                      <Text style={styles.ratingText3}>S</Text>
+                    </View>
+                  </View>
+                  <View style={[styles.row]}>
+                    <Text style={[styles.costTextList]}>55$</Text>
+                    <Image
+                      source={images.rating}
+                      style={styles.ratingStyList}
+                    />
+                    <TouchableOpacity style={styles.heartViewList}>
+                      <Image
+                        source={images.heartFilled}
+                        style={styles.heartImgList}
+                      />
+                    </TouchableOpacity>
+                  </View>
+
+                  <TouchableOpacity style={styles.closeViewList}>
+                    <Image source={images.close} style={styles.closeImg} />
+                  </TouchableOpacity>
+                </View>
+              </View>
             </View>
           )}
 
