@@ -5,13 +5,13 @@ import {
   TouchableOpacity,
   TextInput,
   ScrollView,
-} from 'react-native';
-import React, {useState} from 'react';
-import {styles} from './style';
-import images from '../../services/utilities/images';
+} from "react-native";
+import React, { useState } from "react";
+import { styles } from "./style";
+import images from "../../services/utilities/images";
 
-export default function HelpCenter({navigation}) {
-  const [tabName, setTabName] = useState('FAQ');
+export default function HelpCenter({ navigation }) {
+  const [tabName, setTabName] = useState("FAQ");
   const [showContent, setShowContent] = useState(false);
   const [showContentOne, setShowContentOne] = useState(false);
   const [showContentTwo, setShowContentTwo] = useState(false);
@@ -35,25 +35,27 @@ export default function HelpCenter({navigation}) {
         <View style={styles.row}>
           <TouchableOpacity
             onPress={() => {
-              setTabName('FAQ');
-            }}>
+              setTabName("FAQ");
+            }}
+          >
             <Text style={styles.textStyling}>FAQ</Text>
           </TouchableOpacity>
           <TouchableOpacity
             onPress={() => {
-              setTabName('New Password');
-            }}>
+              setTabName("New Password");
+            }}
+          >
             <Text style={styles.textStyling}>New Password</Text>
           </TouchableOpacity>
         </View>
-        {tabName === 'FAQ' ? (
+        {tabName === "FAQ" ? (
           <View style={styles.horiLine}></View>
         ) : (
           <View style={[styles.horiLine, styles.left]}></View>
         )}
         <View style={styles.horizontalLine}></View>
 
-        {tabName === 'FAQ' ? (
+        {tabName === "FAQ" ? (
           <View>
             <ScrollView horizontal showsHorizontalScrollIndicator={false}>
               <View style={styles.horizontalRow}>
@@ -79,41 +81,46 @@ export default function HelpCenter({navigation}) {
                 </TouchableOpacity>
               </View>
             </ScrollView>
-            <View
-              style={
-                showContent ? styles.bottomMainView : styles.bottomMainView2
-              }>
-              <View style={styles.bottomViewAllingment}>
-                <Text style={styles.viewTextSty}>
-                  Can i track my order delivery status?
-                </Text>
-                <TouchableOpacity onPress={() => setShowContent(!showContent)}>
-                  <Image
-                    source={showContent ? images.upArrow : images.downArrow}
-                    style={styles.downArrowSty}
-                  />
-                </TouchableOpacity>
-              </View>
-              {showContent && (
-                <View>
-                  <View style={showContent && styles.line}></View>
-                  <Text style={styles.bottomParaSty}>
-                    Lorem ipsum dolor sit amet consectetur. Bibendum lobortis at
-                    vel integer.
+            <TouchableOpacity  onPress={() => setShowContent(!showContent)}>
+              <View
+                style={
+                  showContent ? styles.bottomMainView : styles.bottomMainView2
+                }
+              >
+                <View style={styles.bottomViewAllingment}>
+                  <Text style={styles.viewTextSty}>
+                    Can i track my order delivery status?
                   </Text>
+                
+                    <Image
+                      source={showContent ? images.upArrow : images.downArrow}
+                      style={styles.downArrowSty}
+                    />
                 </View>
-              )}
-            </View>
+                {showContent && (
+                  <View>
+                    <View style={showContent && styles.line}></View>
+                    <Text style={styles.bottomParaSty}>
+                      Lorem ipsum dolor sit amet consectetur. Bibendum lobortis
+                      at vel integer.
+                    </Text>
+                  </View>
+                )}
+              </View>
+            </TouchableOpacity>
+
             <View
               style={
                 showContentOne ? styles.bottomMainView : styles.bottomMainView2
-              }>
+              }
+            >
               <View style={styles.bottomViewAllingment}>
                 <Text style={styles.viewTextSty}>
                   Is there a return Policy?
                 </Text>
                 <TouchableOpacity
-                  onPress={() => setShowContentOne(!showContentOne)}>
+                  onPress={() => setShowContentOne(!showContentOne)}
+                >
                   <Image
                     source={showContentOne ? images.upArrow : images.downArrow}
                     style={styles.downArrowSty}
@@ -133,13 +140,15 @@ export default function HelpCenter({navigation}) {
             <View
               style={
                 showContentTwo ? styles.bottomMainView : styles.bottomMainView2
-              }>
+              }
+            >
               <View style={styles.bottomViewAllingment}>
                 <Text style={styles.viewTextSty}>
                   Can I save my favourite item for later?
                 </Text>
                 <TouchableOpacity
-                  onPress={() => setShowContentTwo(!showContentTwo)}>
+                  onPress={() => setShowContentTwo(!showContentTwo)}
+                >
                   <Image
                     source={showContentTwo ? images.upArrow : images.downArrow}
                     style={styles.downArrowSty}
@@ -161,13 +170,15 @@ export default function HelpCenter({navigation}) {
                 showContentThree
                   ? styles.bottomMainView
                   : styles.bottomMainView2
-              }>
+              }
+            >
               <View style={styles.bottomViewAllingment}>
                 <Text style={styles.viewTextSty}>
                   What payment method are accepted?
                 </Text>
                 <TouchableOpacity
-                  onPress={() => setShowContentThree(!showContentThree)}>
+                  onPress={() => setShowContentThree(!showContentThree)}
+                >
                   <Image
                     source={
                       showContentThree ? images.upArrow : images.downArrow
@@ -189,11 +200,13 @@ export default function HelpCenter({navigation}) {
             <View
               style={
                 showContentFour ? styles.bottomMainView : styles.bottomMainView2
-              }>
+              }
+            >
               <View style={styles.bottomViewAllingment}>
                 <Text style={styles.viewTextSty}>How do i add review?</Text>
                 <TouchableOpacity
-                  onPress={() => setShowContentFour(!showContentFour)}>
+                  onPress={() => setShowContentFour(!showContentFour)}
+                >
                   <Image
                     source={showContentFour ? images.upArrow : images.downArrow}
                     style={styles.downArrowSty}
@@ -230,20 +243,28 @@ export default function HelpCenter({navigation}) {
             <View
               style={
                 showContentFour ? styles.bottomMainView : styles.bottomMainView2
-              }>
-              <View style={styles.bottomViewAllingment}>
-                <View style={styles.Img}>
-                  <Image source={images.whatsApp} style={styles.passViewSty} />
-                  <Text style={styles.passTextSty}>WhatsApp</Text>
-                </View>
-                <TouchableOpacity
-                  onPress={() => setShowContentFour(!showContentFour)}>
+              }
+            >
+              <TouchableOpacity
+                onPress={() => setShowContentFour(!showContentFour)}
+              >
+                <View style={styles.bottomViewAllingment}>
+                  <View style={styles.Img}>
+                    <Image
+                      source={images.whatsApp}
+                      style={styles.passViewSty}
+                    />
+                    <Text style={styles.passTextSty}>WhatsApp</Text>
+                  </View>
+
                   <Image
                     source={showContentFour ? images.upArrow : images.downArrow}
                     style={styles.downArrowSty}
                   />
-                </TouchableOpacity>
-              </View>
+                  {/* </TouchableOpacity> */}
+                </View>
+              </TouchableOpacity>
+
               {showContentFour && (
                 <View>
                   <View style={styles.line}></View>

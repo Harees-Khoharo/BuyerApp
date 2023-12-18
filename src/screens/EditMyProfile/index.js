@@ -9,7 +9,7 @@ export default function EditMyProfile() {
     <SafeAreaView>
     <View style={styles.MainContainer}>
       <View style={styles.headerPadding}>
-        <Header title={'Edit my Profile'} />
+        <Header backImage={images.backArrow} title={'Edit my Profile'} />
       </View>
       <View style={styles.topView}>
         <TouchableOpacity style={styles.listViewSty}>

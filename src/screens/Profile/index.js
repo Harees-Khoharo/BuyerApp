@@ -5,11 +5,14 @@ import {
   Image,
   TouchableOpacity,
   ScrollView,
+  Alert,
 } from "react-native";
 import React, { useState } from "react";
 import Header from "../../components/Header";
 import images from "../../services/utilities/images";
 import { styles } from "./style";
+import { colors } from "../../services";
+import Modal from "react-native-modal";
 
 export default function Profile() {
   const [profileSettings, setProfileSettings] = useState([
@@ -24,69 +27,82 @@ export default function Profile() {
     { logo: images.setting, name: "Settings", arrow: images.rightArrow },
     { logo: images.help, name: "Help Center", arrow: images.rightArrow },
     { logo: images.address, name: "Address", arrow: images.rightArrow },
-    { logo: images.privacy, name: "Privacy and Policy", arrow: images.rightArrow },
+    {
+      logo: images.privacy,
+      name: "Privacy and Policy",
+      arrow: images.rightArrow,
+    },
     { logo: images.invite, name: "Invite Friends", arrow: images.rightArrow },
     { logo: images.logout, name: "Log out", arrow: images.rightArrow },
   ]);
+  const [isModalVisible, setIsModalVisible] = useState(false);
+
+  const handleLogout = () => {
+    setIsModalVisible(true);
+  };
   return (
-    <SafeAreaView>
-      <ScrollView>
-      <Header
-        backImage={images.backArrow}
-        title={"Profile"}
-        addToCartImage={images.bellicon}
-      />
-      <Image source={images.profile} style={styles.profile} />
-      <Text style={styles.profileName}>Welcome Tanessah</Text>
-      <View style={styles.balanceView}>
-        <Image source={images.balance} style={styles.iconSty} />
-        <Text style={styles.balanceText}>Your Balance: R 250.00</Text>
-      </View>
+    <ScrollView>
+      <SafeAreaView style={{ backgroundColor: colors.white }}>
+        <Header
+          backImage={images.backArrow}
+          title={"Profile"}
+          addToCartImage={images.bellicon}
+        />
+        <Image source={images.profile} style={styles.profile} />
+        <Text style={styles.profileName}>Welcome Tanessah</Text>
+        <View style={styles.balanceView}>
+          <Image source={images.balance} style={styles.iconSty} />
+          <Text style={styles.balanceText}>Your Balance: R 250.00</Text>
+        </View>
         {profileSettings.map((item, index) => {
           return (
             <View key={index}>
-              <TouchableOpacity style={styles.profileMenu}>
+              <TouchableOpacity
+                style={styles.profileMenu}
+                onPress={() => {
+                  if (item.name === "Log out") {
+                    handleLogout();
+                  }
+                }}
+              >
                 <Image source={item.logo} style={styles.iconSty} />
                 <Text style={styles.profileMenuText}>{item.name}</Text>
-                <Image
-                  source={item.arrow}
-                  style={styles.rightArrowIconSty}
-                />
+                <Image source={item.arrow} style={styles.rightArrowIconSty} />
               </TouchableOpacity>
               <View style={styles.horizontalLine}></View>
             </View>
           );
         })}
-      </ScrollView>
-      {/* <TouchableOpacity style={styles.profileMenu}>
-        <Image source={images.message} style={styles.iconSty}/>
-        <Text style={styles.profileMenuText}>Inbox</Text>
-        <Image source={images.rightArrow} style={styles.rightArrowIconSty} />
-      </TouchableOpacity>
-      <View style={styles.horizontalLine} ></View>
-      <TouchableOpacity style={styles.profileMenu}>
-        <Image source={images.order} style={styles.iconSty}/>
-        <Text style={styles.profileMenuText}>Order</Text>
-        <Image source={images.rightArrow} style={styles.rightArrowIconSty} />
-      </TouchableOpacity>
-      <View style={styles.horizontalLine} ></View>
-      <TouchableOpacity style={styles.profileMenu}>
-        <Image source={images.payment} style={styles.iconSty}/>
-        <Text style={styles.profileMenuText}>Payment</Text>
-        <Image source={images.rightArrow} style={styles.rightArrowIconSty} />
-      </TouchableOpacity>
-      <View style={styles.horizontalLine} ></View>
-      <TouchableOpacity style={styles.profileMenu}>
-        <Image source={images.setting} style={styles.iconSty}/>
-        <Text style={styles.profileMenuText}>Settings</Text>
-        <Image source={images.rightArrow} style={styles.rightArrowIconSty} />
-      </TouchableOpacity>
-      <View style={styles.horizontalLine} ></View>
-      <TouchableOpacity style={styles.profileMenu}>
-        <Image source={images.message} style={styles.iconSty}/>
-        <Text style={styles.profileMenuText}>Inbox</Text>
-        <Image source={images.rightArrow} style={styles.rightArrowIconSty} />
-      </TouchableOpacity> */}
-    </SafeAreaView>
+        <View style={{ paddingBottom: 20 }}></View>
+        <Modal
+          isVisible={isModalVisible}
+          onBackButtonPress={() => setIsModalVisible(false)}
+        >
+          <View style={styles.mainModal}>
+            <View style={styles.modalFirstView}>
+              <Text style={styles.modalFirstViewText}>Log out?</Text>
+              <View style={styles.line}></View>
+              <Text style={styles.modalText}>
+                Are you sure you want to log out?{" "}
+              </Text>
+            </View>
+            <View style={styles.modalSecondView}>
+              <TouchableOpacity
+                style={styles.modalBtnView}
+                onPress={() => setIsModalVisible(false)}
+              >
+                <Text style={styles.modalBtn}>Cancel</Text>
+              </TouchableOpacity>
+              <TouchableOpacity
+                style={styles.modalBtnView1}
+                onPress={() => setIsModalVisible(false)}
+              >
+                <Text style={styles.modalBtn1}> Yes, Log out</Text>
+              </TouchableOpacity>
+            </View>
+          </View>
+        </Modal>
+      </SafeAreaView>
+    </ScrollView>
   );
 }

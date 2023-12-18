@@ -1,5 +1,5 @@
-import {StyleSheet} from 'react-native';
-import {colors, fontSize, sizes} from '../../services';
+import { StyleSheet } from "react-native";
+import { colors, fontSize, sizes } from "../../services";
 
 export const styles = StyleSheet.create({
   MainContainer: {
@@ -13,10 +13,10 @@ export const styles = StyleSheet.create({
     width: sizes.screenWidth,
   },
   headerImg: {
-    position: 'absolute',
+    position: "absolute",
     right: 23,
-    bottom: 13,
-    resizeMode: 'contain',
+    bottom: sizes.screenHeight * 0.001,
+    resizeMode: "contain",
     width: sizes.screenWidth * 0.08,
     height: sizes.screenWidth * 0.08,
   },
@@ -24,8 +24,8 @@ export const styles = StyleSheet.create({
     marginTop: sizes.screenHeight * 0.03,
   },
   MainviewSty: {
-    flexDirection: 'row',
-    alignItems: 'center',
+    flexDirection: "row",
+    alignItems: "center",
     paddingHorizontal: sizes.screenWidth * 0.04,
     // borderWidth:1,
     borderRadius: sizes.screenWidth * 0.01,
@@ -33,7 +33,7 @@ export const styles = StyleSheet.create({
     height: sizes.screenHeight * 0.1,
     marginLeft: sizes.screenWidth * 0.05,
     marginBottom: sizes.screenWidth * 0.01,
-    shadowColor: '#000',
+    shadowColor: "#000",
     shadowOffset: {
       width: 1,
       height: 1,
@@ -48,20 +48,20 @@ export const styles = StyleSheet.create({
     marginLeft: sizes.screenWidth * 0.03,
   },
   ViewImg: {
-    resizeMode: 'contain',
+    resizeMode: "contain",
     width: sizes.screenWidth * 0.12,
     height: sizes.screenWidth * 0.12,
   },
   viewTextSty: {
     fontSize: fontSize.medium,
     color: colors.black,
-    fontWeight: 'bold',
+    fontWeight: "bold",
   },
   viewTextSty2: {
     fontSize: fontSize.smallM,
     color: colors.black,
   },
   bold: {
-    fontWeight: '600',
+    fontWeight: "600",
   },
 });

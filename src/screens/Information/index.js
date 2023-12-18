@@ -10,12 +10,14 @@ import React, { useState } from "react";
 import Header from "../../components/Header";
 import images from "../../services/utilities/images";
 import { styles } from "./style";
-import { colors } from "../../services";
+import { colors, sizes } from "../../services";
 
 export default function Information() {
   const [tabName, setTabName] = useState(false);
   return (
-    <SafeAreaView>
+    <SafeAreaView
+      style={{ backgroundColor: colors.white, height: sizes.screenHeight }}
+    >
       <View style={styles.mainContainer}>
         <Header
           backImage={images.backArrow}
@@ -67,13 +69,16 @@ export default function Information() {
           </View>
           <View style={styles.row}>
             <TouchableOpacity onPress={() => setTabName(!tabName)}>
-              <Image source={tabName ? images.checkboxoff : images.checkboxon} style={styles.checkBoxImg}/>
+              <Image
+                source={tabName ? images.checkboxoff : images.checkboxon}
+                style={styles.checkBoxImg}
+              />
             </TouchableOpacity>
             <Text style={styles.checkBoxText}>Set as default address</Text>
           </View>
           <TouchableOpacity style={styles.modalBottomBtn}>
-        <Text style={styles.bottomBtnText}>Next</Text>
-      </TouchableOpacity>
+            <Text style={styles.bottomBtnText}>Next</Text>
+          </TouchableOpacity>
         </View>
       </View>
     </SafeAreaView>
