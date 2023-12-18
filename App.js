@@ -31,6 +31,7 @@ import Verification from "./src/screens/Verification";
 import NewPassword from "./src/screens/NewPassword";
 import PasswordManager from "./src/screens/PasswordManager";
 import Favourites from "./src/screens/Favourites";
+import MyCart from "./src/screens/MyCart";
 
 export default function App() {
   return (
@@ -67,7 +68,8 @@ export default function App() {
       {/* <MessageList /> */}
       {/* <ChatRequest /> */}
       {/* <Booking /> */}
-      <Favourites />
+      {/* <Favourites /> */}
+      <MyCart />
     </SafeAreaView>
   );
 }

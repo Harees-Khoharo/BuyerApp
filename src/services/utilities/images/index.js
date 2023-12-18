@@ -117,6 +117,11 @@ import swap from "../../../assets/swap.png";
 import grid from "../../../assets/grid.png";
 import list from "../../../assets/list.png";
 import close from "../../../assets/close.png";
+import myCartImg from "../../../assets/myCartImg.png";
+import myCartImgOne from "../../../assets/myCartImgOne.png";
+import myCartImgTwo from "../../../assets/myCartImgTwo.png";
+import plusTwo from "../../../assets/plusTwo.png";
+import minus from "../../../assets/minus.png";
 
 
 const images = {
@@ -130,6 +135,8 @@ const images = {
   card,
   cardTwo,
   plus,
+  plusTwo,
+  minus,
   mastercardTwo,
   rightArrow,
   bags,
@@ -238,7 +245,10 @@ const images = {
   swap,
   grid,
   list,
-  close
+  close,
+  myCartImg,
+  myCartImgOne,
+  myCartImgTwo,
 };
 
 export default images;
