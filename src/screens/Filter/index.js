@@ -10,7 +10,7 @@ import React, { useCallback, useState } from "react";
 import { styles } from "./style";
 import Header from "../../components/Header";
 import images from "../../services/utilities/images";
-import RangeSlider from "react-native-range-slider";
+
 
 export default function Filter() {
   const [reviewStatus, setReviewStatus] = useState("");
