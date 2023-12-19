@@ -83,7 +83,7 @@ export const styles = StyleSheet.create({
         elevation: 8,
         backgroundColor:'white',
 
-        width:sizes.screenWidth * 0.9,
+        width:sizes.screenWidth * 0.9 ,
         alignSelf:'center',
         // overflow:'hidden',
         paddingBottom: sizes.screenHeight*0.02
