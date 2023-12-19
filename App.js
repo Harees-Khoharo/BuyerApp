@@ -113,7 +113,7 @@ export default function App() {
       {/* <Accessories /> */}
       {/* <Electronics /> */}
       {/* <VisualSearch /> */}
-      <ProductDetail />
+      {/* <ProductDetail /> */}
       {/* <Filter /> */}
       {/* <TrackOrder /> */}
       {/* <RatingAndReview /> */}
