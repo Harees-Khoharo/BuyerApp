@@ -32,6 +32,17 @@ import NewPassword from "./src/screens/NewPassword";
 import PasswordManager from "./src/screens/PasswordManager";
 import Favourites from "./src/screens/Favourites";
 import MyCart from "./src/screens/MyCart";
+import Search from "./src/screens/Search";
+import Categories from "./src/screens/Categories";
+import CategoryItems from "./src/screens/CategoryItems";
+import Alcohol from "./src/screens/Alcohol";
+import Appliances from "./src/screens/Appliances";
+import Toiletries from "./src/screens/Toiletries";
+import Wears from "./src/screens/Wears";
+import Accessories from "./src/screens/Accessories";
+import Electronics from "./src/screens/Electronics";
+import Filter from "./src/screens/Filter";
+import TrackOrder from "./src/screens/TrackOrder";
 
 export default function App() {
   return (
@@ -69,7 +80,18 @@ export default function App() {
       {/* <ChatRequest /> */}
       {/* <Booking /> */}
       {/* <Favourites /> */}
-      <MyCart />
+      {/* <MyCart /> */}
+      {/* <Search /> */}
+      {/* <Categories /> */}
+      {/* <CategoryItems /> */}
+      {/* <Alcohol /> */}
+      {/* <Appliances/> */}
+      {/* <Toiletries /> */}
+      {/* <Wears /> */}
+      {/* <Accessories /> */}
+      {/* <Electronics /> */}
+      {/* <Filter /> */}
+      <TrackOrder />
     </SafeAreaView>
   );
 }

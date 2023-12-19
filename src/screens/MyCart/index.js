@@ -50,7 +50,9 @@ export default function MyCart() {
             </View>
           </View>
           <View style={styles.lastView}>
-            <Image source={images.threeDot} style={styles.threeDotSty} />
+            <TouchableOpacity>
+              <Image source={images.threeDot} style={styles.threeDotSty} />
+            </TouchableOpacity>
             <Text style={styles.prices}>$51</Text>
           </View>
         </View>
@@ -79,7 +81,10 @@ export default function MyCart() {
             </View>
           </View>
           <View style={styles.lastView}>
-            <Image source={images.threeDot} style={styles.threeDotSty} />
+            <TouchableOpacity>
+              <Image source={images.threeDot} style={styles.threeDotSty} />
+            </TouchableOpacity>
+
             <Text style={styles.prices}>$30</Text>
           </View>
         </View>
@@ -108,7 +113,10 @@ export default function MyCart() {
             </View>
           </View>
           <View style={styles.lastView}>
-            <Image source={images.threeDot} style={styles.threeDotSty} />
+            <TouchableOpacity>
+              <Image source={images.threeDot} style={styles.threeDotSty} />
+            </TouchableOpacity>
+
             <Text style={styles.prices}>$43</Text>
           </View>
         </View>
@@ -245,15 +253,24 @@ export default function MyCart() {
                 </View>
               </View>
               <View style={styles.lastView}>
-                <Image source={images.threeDot} style={styles.threeDotSty} />
+                <TouchableOpacity>
+                  <Image source={images.threeDot} style={styles.threeDotSty} />
+                </TouchableOpacity>
+
                 <Text style={styles.prices}>$43</Text>
               </View>
             </View>
             <View style={styles.modalRow}>
-              <TouchableOpacity style={styles.modalBtn1} onPress={()=> setIsShowRemoveModal(false)}>
+              <TouchableOpacity
+                style={styles.modalBtn1}
+                onPress={() => setIsShowRemoveModal(false)}
+              >
                 <Text style={styles.modalTextStyMod}>cancel</Text>
               </TouchableOpacity>
-              <TouchableOpacity style={styles.modalBtn2} onPress={()=> setIsShowRemoveModal(false)}>
+              <TouchableOpacity
+                style={styles.modalBtn2}
+                onPress={() => setIsShowRemoveModal(false)}
+              >
                 <Text style={styles.modalTextStyMod1}>Yes, Remove</Text>
               </TouchableOpacity>
             </View>

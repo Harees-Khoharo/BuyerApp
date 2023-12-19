@@ -125,7 +125,21 @@ import minus from "../../../assets/minus.png";
 import discount from "../../../assets/discount.png";
 import discountTwo from "../../../assets/discountTwo.png";
 import discountThree from "../../../assets/discountThree.png";
-
+import categoryImg from "../../../assets/categoryImg.png";
+import categoryImgTwo from "../../../assets/categoryImgTwo.png";
+import singleStar from "../../../assets/singleStar.png";
+import backbtn from "../../../assets/backbtn.png";
+import alcohol from "../../../assets/alcohol.png";
+import appliances2 from "../../../assets/appliances2.png";
+import Toiletries2 from "../../../assets/Toiletries2.png";
+import wears2 from "../../../assets/wears2.png";
+import electronics2 from "../../../assets/electronics2.png";
+import fiveStars from "../../../assets/fiveStars.png";
+import btnOn from "../../../assets/btnOn.png";
+import btnOff from "../../../assets/btnOff.png";
+import orderLine from "../../../assets/orderLine.png";
+import timer from "../../../assets/timer.png";
+import deliver from "../../../assets/deliver.png";
 
 const images = {
   dhl,
@@ -137,6 +151,9 @@ const images = {
   checkboxoff,
   card,
   cardTwo,
+  timer,
+  deliver,
+  orderLine,
   plus,
   plusTwo,
   minus,
@@ -255,6 +272,18 @@ const images = {
   myCartImg,
   myCartImgOne,
   myCartImgTwo,
+  categoryImg,
+  categoryImgTwo,
+  singleStar,
+  backbtn,
+  alcohol,
+  appliances2,
+  Toiletries2,
+  wears2,
+  electronics2,
+  fiveStars,
+  btnOn,
+  btnOff,
 };
 
 export default images;
