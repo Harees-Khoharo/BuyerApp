@@ -45,6 +45,7 @@ import Filter from "./src/screens/Filter";
 import TrackOrder from "./src/screens/TrackOrder";
 import RatingAndReview from "./src/screens/RatingAndReview";
 import VisualSearch from "./src/screens/VisualSearch";
+import ProductDetail from "./src/screens/ProductDetail";
 
 export default function App() {
   return (
@@ -92,7 +93,8 @@ export default function App() {
       {/* <Wears /> */}
       {/* <Accessories /> */}
       {/* <Electronics /> */}
-      <VisualSearch />
+      {/* <VisualSearch /> */}
+      <ProductDetail />
       {/* <Filter /> */}
       {/* <TrackOrder /> */}
       {/* <RatingAndReview /> */}

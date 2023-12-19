@@ -153,6 +153,16 @@ import avatar1 from "../../../assets/avatar1.png";
 import writeReview from "../../../assets/writeReview.png";
 import cameraBtn from "../../../assets/cameraBtn.png";
 import visualBg from "../../../assets/visualBg.png";
+import pdBg from "../../../assets/pdBg.png";
+import backBtn2 from "../../../assets/backBtn2.png";
+import share from "../../../assets/share.png";
+import heartBtn from "../../../assets/heartBtn.png";
+import dotBtn from "../../../assets/dotBtn.png";
+import locationIcon2 from "../../../assets/locationIcon2.png";
+import salon from "../../../assets/salon.png";
+import arrow from "../../../assets/arrow.png";
+import salon2 from "../../../assets/salon2.png";
+import store from "../../../assets/store.png";
 
 const images = {
   dhl,
@@ -310,6 +320,16 @@ const images = {
   writeReview,
   cameraBtn,
   visualBg,
+  pdBg,
+  backBtn2,
+  share,
+  heartBtn,
+  dotBtn,
+  locationIcon2,
+  salon,
+  arrow,
+  salon2,
+  store,
 };
 
 export default images;
