@@ -152,6 +152,7 @@ import helpfulBtn from "../../../assets/helpfulBtn.png";
 import avatar1 from "../../../assets/avatar1.png";
 import writeReview from "../../../assets/writeReview.png";
 import cameraBtn from "../../../assets/cameraBtn.png";
+import visualBg from "../../../assets/visualBg.png";
 
 const images = {
   dhl,
@@ -308,6 +309,7 @@ const images = {
   avatar1,
   writeReview,
   cameraBtn,
+  visualBg,
 };
 
 export default images;

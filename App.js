@@ -44,6 +44,7 @@ import Electronics from "./src/screens/Electronics";
 import Filter from "./src/screens/Filter";
 import TrackOrder from "./src/screens/TrackOrder";
 import RatingAndReview from "./src/screens/RatingAndReview";
+import VisualSearch from "./src/screens/VisualSearch";
 
 export default function App() {
   return (
@@ -91,9 +92,10 @@ export default function App() {
       {/* <Wears /> */}
       {/* <Accessories /> */}
       {/* <Electronics /> */}
+      <VisualSearch />
       {/* <Filter /> */}
       {/* <TrackOrder /> */}
-      <RatingAndReview />
+      {/* <RatingAndReview /> */}
     </SafeAreaView>
   );
 }
