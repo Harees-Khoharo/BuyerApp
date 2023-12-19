@@ -151,6 +151,7 @@ import ratingThree from "../../../assets/ratingThree.png";
 import helpfulBtn from "../../../assets/helpfulBtn.png";
 import avatar1 from "../../../assets/avatar1.png";
 import writeReview from "../../../assets/writeReview.png";
+import cameraBtn from "../../../assets/cameraBtn.png";
 
 const images = {
   dhl,
@@ -306,6 +307,7 @@ const images = {
   helpfulBtn,
   avatar1,
   writeReview,
+  cameraBtn,
 };
 
 export default images;

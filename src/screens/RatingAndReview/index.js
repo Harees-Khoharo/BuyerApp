@@ -5,16 +5,24 @@ import {
   Image,
   TouchableOpacity,
   ScrollView,
+  TextInput,
 } from "react-native";
 import React, { useState } from "react";
 import { styles } from "./style";
 import Header from "../../components/Header";
 import images from "../../services/utilities/images";
 import { colors, sizes } from "../../services";
+import Modal from "react-native-modal";
+import StarRating from "react-native-star-rating";
 
 export default function RatingAndReview() {
   const [showWithPhoto, setShowWithPhoto] = useState(false);
+  const [isModalVisible, setIsModalVisible] = useState(false);
+  const [starCount, setStarCount] = useState(0);
 
+  const onStarRatingPress = (rating) => {
+    setStarCount(rating);
+  };
   return (
     <SafeAreaView>
       <View style={styles.mainContainer}>
@@ -168,10 +176,53 @@ export default function RatingAndReview() {
             </View>
           </ScrollView>
         )}
-        <TouchableOpacity style={styles.reviewBtn}>
-          <Image source={images.writeReview} style={styles.writeReview}/>
+        <TouchableOpacity
+          style={styles.reviewBtn}
+          onPress={() => setIsModalVisible(true)}
+        >
+          <Image source={images.writeReview} style={styles.writeReview} />
         </TouchableOpacity>
       </View>
+      <Modal
+        isVisible={isModalVisible}
+        onBackButtonPress={() => setIsModalVisible(false)}
+      >
+        <View style={styles.mainModal}>
+          <View style={styles.modalFirstView}>
+            <View style={styles.line}></View>
+            <Text style={styles.modalFirstViewText}>What is you rate?</Text>
+            <StarRating
+              disabled={false}
+              maxStars={5}
+              rating={starCount}
+              starStyle={{padding:sizes.screenWidth*0.02}}
+              emptyStarColor={'#9B9B9B'}
+              fullStarColor={'#FFBA49'}
+              selectedStar={(rating) => onStarRatingPress(rating)}
+            />
+            <Text style={styles.modalText}>
+              Please share your opinion about the product
+            </Text>
+          </View>
+          <TextInput
+            placeholder="Your review"
+            placeholderTextColor={colors.lightGray2}
+            style={styles.input}
+            multiline={true}
+            numberOfLines={6}
+          />
+          <TouchableOpacity>
+            <Image source={images.cameraBtn} style={styles.cameraBtn} />
+            <Text style={styles.cameraBtnText}> Add your photos </Text>
+          </TouchableOpacity>
+          <TouchableOpacity
+            style={styles.modalBtnView1}
+            onPress={() => setIsModalVisible(false)}
+          >
+            <Text style={styles.modalBtn1}> SEND REVIEW</Text>
+          </TouchableOpacity>
+        </View>
+      </Modal>
     </SafeAreaView>
   );
 }
