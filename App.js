@@ -43,6 +43,7 @@ import Accessories from "./src/screens/Accessories";
 import Electronics from "./src/screens/Electronics";
 import Filter from "./src/screens/Filter";
 import TrackOrder from "./src/screens/TrackOrder";
+import RatingAndReview from "./src/screens/RatingAndReview";
 
 export default function App() {
   return (
@@ -91,7 +92,8 @@ export default function App() {
       {/* <Accessories /> */}
       {/* <Electronics /> */}
       {/* <Filter /> */}
-      <TrackOrder />
+      {/* <TrackOrder /> */}
+      <RatingAndReview />
     </SafeAreaView>
   );
 }

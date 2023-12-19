@@ -140,6 +140,14 @@ import btnOff from "../../../assets/btnOff.png";
 import orderLine from "../../../assets/orderLine.png";
 import timer from "../../../assets/timer.png";
 import deliver from "../../../assets/deliver.png";
+import ratingReview from "../../../assets/ratingReview.png";
+import avatar from "../../../assets/avatar.png";
+import photo from "../../../assets/photo.png";
+import photoTwo from "../../../assets/photoTwo.png";
+import photoThree from "../../../assets/photoThree.png";
+import withPhoto from "../../../assets/withPhoto.png";
+import noWithPhoto from "../../../assets/noWithPhoto.png";
+import ratingThree from "../../../assets/ratingThree.png";
 
 const images = {
   dhl,
@@ -147,7 +155,12 @@ const images = {
   fedex,
   mastercard,
   backArrow,
+  ratingReview,
   checkboxon,
+  photo,
+  photoTwo,
+  photoThree,
+  avatar,
   checkboxoff,
   card,
   cardTwo,
@@ -284,6 +297,9 @@ const images = {
   fiveStars,
   btnOn,
   btnOff,
+  withPhoto,
+  noWithPhoto,
+  ratingThree
 };
 
 export default images;
