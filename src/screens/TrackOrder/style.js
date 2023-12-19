@@ -12,20 +12,9 @@ export const styles = StyleSheet.create({
     },
     row: {
         flexDirection: "row",
-        // borderWidth:1,
         paddingHorizontal:sizes.screenWidth * 0.05,
         width:sizes.screenWidth * 0.99,
         height:sizes.screenHeight * 0.15,
-        // borderRadius:sizes.screenWidth * 0.03,
-        // shadowColor: '#000',
-        // shadowOffset: {
-        //   width: 0,
-        //   height: 0,
-        // },
-        // shadowOpacity: 0.1,
-        // shadowRadius: 0,
-        // elevation: 3,
-        // backgroundColor:'white',
         marginTop:sizes.screenHeight * 0.05,
         alignSelf:'center'
       },
@@ -33,14 +22,11 @@ export const styles = StyleSheet.create({
         resizeMode: "contain",
         width: sizes.screenWidth * 0.3,
         height: sizes.screenWidth * 0.3,
-        // backgroundColor:'red',
+        borderRadius:sizes.screenWidth * 0.05
       },
       row2: {
         flexDirection: "row",
-        // justifyContent:'space-evenly',
-        // alignItems:'center',
         width: sizes.screenWidth * 0.6,
-        // backgroundColor:'blue'
       },
       row3: {
         flexDirection: "row",
@@ -76,7 +62,64 @@ export const styles = StyleSheet.create({
         height:sizes.screenHeight * 0.001,
         backgroundColor:'#C4C4C4',
         alignSelf:'center',
-        marginTop:sizes.screenHeight * 0.02,
+        marginTop:sizes.screenHeight * 0.03,
         marginBottom:sizes.screenHeight * 0.02,
+    },
+    orderRowMainText:{
+        color:colors.black,
+        fontSize:fontSize.extraLarge,
+        fontWeight:'bold',
+        marginTop:sizes.screenHeight * 0.02,
+    },
+    orderRow:{
+        flexDirection:'row',
+        justifyContent:'space-between',
+        marginTop:sizes.screenHeight * 0.02
+    },
+    orderRowText:{
+        color:colors.disabledBg3,
+        fontSize:fontSize.large
+    },
+    orderRowText2:{
+        color:colors.disabledBg3,
+        fontWeight:'bold',
+        fontSize:fontSize.large
+    },
+    deliveryPhase:{
+        flexDirection:'row',
+        marginTop:sizes.screenHeight * 0.02,
+        marginLeft:sizes.screenWidth * 0.06,
+        // alignItems:'center'
+    },
+    deliveryPhaseText:{
+        color:colors.black,
+        fontSize:fontSize.large
+    },
+    deliveryPhaseTextMiddle:{
+            color:colors.black,
+            fontSize:fontSize.large,
+            marginTop:sizes.screenHeight * 0.07
+    },
+    deliveryPhaseText2:{
+        color:colors.disabledBg3
+    },
+    orderImg:{
+        resizeMode:'contain',
+        width:sizes.screenWidth * 0.07,
+        height:sizes.screenHeight * 0.04,
+        // backgroundColor:'red'
+    },
+    orderLineImg:{
+        resizeMode:'contain',
+        width:sizes.screenWidth * 0.07,
+        height:sizes.screenHeight * 0.28,
+        // backgroundColor:'red'
+    },
+    margin:{
+        marginLeft:sizes.screenWidth * 0.02
+    },
+    deliveryImg:{
+        justifyContent:'space-between',
+        marginLeft:sizes.screenWidth * 0.27
     },
 })
