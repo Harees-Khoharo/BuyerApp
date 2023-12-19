@@ -163,6 +163,21 @@ import salon from "../../../assets/salon.png";
 import arrow from "../../../assets/arrow.png";
 import salon2 from "../../../assets/salon2.png";
 import store from "../../../assets/store.png";
+import addPhotosImg from "../../../assets/addPhotosImg.png";
+import addProductImg2 from "../../../assets/addProductImg2.png";
+import crossBlackIcon from "../../../assets/crossBlackIcon.png";
+import crossIconn from "../../../assets/crossIconn.png";
+import deleteProduct from "../../../assets/deleteProduct.png";
+import dollarImg from "../../../assets/dollarImg.png";
+import editProduct from "../../../assets/editProduct.png";
+import locationDetailsImg from "../../../assets/locationDetailsImg.png";
+import myStoreImg from "../../../assets/myStoreImg.png";
+import productImg from "../../../assets/productImg.png";
+import shadow from "../../../assets/shadow.png";
+import locationnn from "../../../assets/locationnn.png";
+import removeStore from "../../../assets/removeStore.png";
+import b from "../../../assets/b.png";
+import productImggg from "../../../assets/productImggg.png";
 
 const images = {
   dhl,
@@ -330,6 +345,21 @@ const images = {
   arrow,
   salon2,
   store,
+  addPhotosImg,
+  addProductImg2,
+  crossBlackIcon,
+  crossIconn,
+  deleteProduct,
+  dollarImg,
+  editProduct,
+  locationDetailsImg,
+  myStoreImg,
+  productImg,
+  shadow,
+  locationnn,
+  removeStore,
+  b,
+  productImggg,
 };
 
 export default images;
