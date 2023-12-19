@@ -25,6 +25,9 @@ import productImg from "../../../assets/productImg.png";
 import shadow from "../../../assets/shadow.png";
 import locationnn from "../../../assets/locationnn.png";
 import usFlag from "../../../assets/usFlag.png";
+import removeStore from "../../../assets/removeStore.png";
+import b from "../../../assets/b.png";
+import productImggg from "../../../assets/productImggg.png";
 
 const images = {
   appleIcon,
@@ -54,6 +57,9 @@ const images = {
   productImg,
   shadow,
   locationnn,
+  removeStore,
+  b,
+  productImggg,
 };
 
 export default images;

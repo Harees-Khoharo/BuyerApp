@@ -10,6 +10,12 @@ import NewPassword from "./src/screens/NewPassword";
 import EnableLocationManual from "./src/screens/EnableLocationManual";
 import EnableLocationNow from "./src/screens/EnableLocationNow";
 import EnterYourLocation from "./src/screens/EnterYourLocation";
+import CreateStore from "./src/screens/CreateStore";
+import CreateNewStore from "./src/screens/CreateNewStore";
+import MyStore from "./src/screens/MyStore";
+import Products from "./src/screens/Products";
+import AddProduct from "./src/screens/AddProduct";
+import EditProduct from "./src/screens/EditProduct";
 
 export default function App() {
   return (
@@ -23,7 +29,13 @@ export default function App() {
       {/* <NewPassword /> */}
       {/* <EnableLocationManual /> */}
       {/* <EnableLocationNow /> */}
-      <EnterYourLocation />
+      {/* <EnterYourLocation /> */}
+      {/* <CreateStore /> */}
+      {/* <CreateNewStore /> */}
+      {/* <MyStore /> */}
+      {/* <Products /> */}
+      {/* <AddProduct /> */}
+      <EditProduct />
     </View>
   );
 }
