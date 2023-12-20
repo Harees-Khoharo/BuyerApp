@@ -113,7 +113,7 @@ export default function ProductDetail() {
                   {"   "}93.4% Positive Feedback
                 </Text>
                 <Text style={[styles.text, styles.bold]}>
-                  {"   "}700 Followers{" "}
+                  700 Followers
                 </Text>
               </View>
             </View>
@@ -162,8 +162,23 @@ export default function ProductDetail() {
               </TouchableOpacity>
             </View>
             <View style={styles.bottomContainer}>
+              <View style={{alignItems: "center"}}>
+
                 <Image source={images.store} style={styles.store}/>
-              <Text style={{ color: colors.black,left:sizes.screenHeight*0.003 }}>Store</Text>
+              <Text style={{ color: colors.black }}>Store</Text>
+              </View>
+              <View style={styles.bottomBtnRow}>
+                <TouchableOpacity style={styles.bottomCartBtnView}>
+                  <Text style={styles.bottomCartBtnSty}>
+                    Add to cart
+                  </Text>
+                </TouchableOpacity>
+                <TouchableOpacity style={styles.bottomCartBtnView1}>
+                  <Text style={styles.bottomCartBtnSty}>
+                    Buy Now
+                  </Text>
+                </TouchableOpacity>
+              </View>
             </View>
           </View>
         </View>

@@ -116,7 +116,7 @@ export default function App() {
       {/* <ProductDetail /> */}
       {/* <Filter /> */}
       {/* <TrackOrder /> */}
-      {/* <RatingAndReview /> */}
+      <RatingAndReview />
     </SafeAreaView>
      
   );

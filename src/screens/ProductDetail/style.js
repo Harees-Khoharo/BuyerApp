@@ -4,13 +4,12 @@ import { colors, fontSize, sizes } from "../../services";
 export const styles = StyleSheet.create({
   mainContainer: {
     backgroundColor: colors.white,
-    height: sizes.screenHeight,
   },
   pdBg: {
     resizeMode: "contain",
-    height: sizes.screenHeight * 0.9,
+    height: sizes.screenHeight * 0.34,
     width: sizes.screenWidth,
-    bottom: sizes.screenHeight * 0.31,
+    bottom: 10,
   },
   backBtnView: {
     position: "absolute",
@@ -47,9 +46,6 @@ export const styles = StyleSheet.create({
     color: colors.black,
     fontSize: fontSize.h4,
     fontWeight: "500",
-  },
-  bottom: {
-    bottom: sizes.screenHeight * 0.58,
   },
   row: {
     flexDirection: "row",
@@ -215,11 +211,42 @@ export const styles = StyleSheet.create({
       height: 1,
     },
     shadowOpacity: 0.1,
-    shadowRadius: 0,
-    elevation: 10,
+    shadowRadius: 10,
+    elevation: 30,
     backgroundColor: colors.white,
+    flexDirection: "row",
+    alignItems: "center"
   },
   store: {
-    height: sizes.screenHeight * 0.05,
+    resizeMode: "contain",
+    height: sizes.screenHeight * 0.04,
+    width: sizes.screenHeight * 0.04,
+  },
+  bottomBtnRow:{
+    flexDirection:'row',
+    // backgroundColor:'red',
+    // width:sizes.screenWidth * 0.,
+    justifyContent:'flex-end',
+    marginLeft:sizes.screenWidth * 0.2,
+  },
+  bottomCartBtnSty:{
+    color:colors.white,
+    textAlign:'center',
+  },
+  bottomCartBtnView:{
+    backgroundColor:colors.disabledBg3,
+    width:sizes.screenWidth * 0.32,
+    height:sizes.screenHeight * 0.06,
+    justifyContent:'center',
+    borderTopLeftRadius:sizes.screenWidth * 0.06,
+    borderBottomLeftRadius:sizes.screenWidth * 0.06,
+  },
+  bottomCartBtnView1:{
+    backgroundColor:colors.black,
+    width:sizes.screenWidth * 0.32,
+    height:sizes.screenHeight * 0.06,
+    justifyContent:'center',
+    borderTopRightRadius:sizes.screenWidth * 0.06,
+    borderBottomRightRadius:sizes.screenWidth * 0.06,
   },
 });
