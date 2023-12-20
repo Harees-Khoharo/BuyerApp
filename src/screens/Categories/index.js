@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { styles } from "./style";
 import images from "../../services/utilities/images";
 
-export default function Categories() {
+export default function Categories({navigation}) {
     // const [categoryItem, setCategoryItem] = useState([
     //     {Image:images.categoryImg, name:'Groceries'},
     //     {Image:images.categoryImg, name:'Alcohol'},
@@ -24,41 +24,41 @@ export default function Categories() {
           </View>
           <Text style={styles.textStyling}>All Categories</Text>
                 <View style={styles.categoryMainView}>
-                <TouchableOpacity style={styles.categoryView}>
+                <TouchableOpacity style={styles.categoryView} onPress={() => navigation.navigate("CategoryItems")}>
                     <Image source={images.categoryImg} style={styles.imgStyling}/>
                     <Text  style={styles.categoryText}>Groceries</Text>
                 </TouchableOpacity>
-                <TouchableOpacity style={styles.categoryView}>
+                <TouchableOpacity style={styles.categoryView} onPress={() => navigation.navigate("Alcohol")}>
                     <Image source={images.categoryImg} style={styles.imgStyling}/>
                     <Text  style={styles.categoryText}>Alcohol</Text>
                 </TouchableOpacity>
               </View>
               <View style={styles.categoryMainView}>
-                <TouchableOpacity style={styles.categoryView}>
+                <TouchableOpacity style={styles.categoryView} onPress={() => navigation.navigate("Appliances")}>
                     <Image source={images.categoryImg} style={styles.imgStyling}/>
                     <Text  style={styles.categoryText}>Appliances</Text>
                 </TouchableOpacity>
-                <TouchableOpacity style={styles.categoryView}>
+                <TouchableOpacity style={styles.categoryView} onPress={() => navigation.navigate("Toiletries")}>
                     <Image source={images.categoryImg} style={styles.imgStyling}/>
                     <Text  style={styles.categoryText}>Toiletries</Text>
                 </TouchableOpacity>
               </View>
               <View style={styles.categoryMainView}>
-                <TouchableOpacity style={styles.categoryView}>
+                <TouchableOpacity style={styles.categoryView} onPress={() => navigation.navigate("Wears")}>
                     <Image source={images.categoryImg} style={styles.imgStyling}/>
                     <Text  style={styles.categoryText}>Wears</Text>
                 </TouchableOpacity>
-                <TouchableOpacity style={styles.categoryView}>
+                <TouchableOpacity style={styles.categoryView} onPress={() => navigation.navigate("Accesories")}>
                     <Image source={images.categoryImg} style={styles.imgStyling}/>
                     <Text  style={styles.categoryText}>Accesories</Text>
                 </TouchableOpacity>
               </View>
               <View style={styles.categoryMainView}>
-                <TouchableOpacity style={styles.categoryView}>
+                <TouchableOpacity style={styles.categoryView} onPress={() => navigation.navigate("Electronics")}>
                     <Image source={images.categoryImg} style={styles.imgStyling}/>
                     <Text  style={styles.categoryText}>Electronics</Text>
                 </TouchableOpacity>
-                <TouchableOpacity style={styles.categoryView}>
+                <TouchableOpacity style={styles.categoryView} onPress={() => navigation.navigate("Alcohol")}>
                     <Image source={images.categoryImg} style={styles.imgStyling}/>
                     <Text  style={styles.categoryText}>Drinks</Text>
                 </TouchableOpacity>

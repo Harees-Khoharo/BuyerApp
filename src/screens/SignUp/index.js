@@ -10,7 +10,7 @@ import {
 import { styles } from "./style";
 import images from "../../services/utilities/images";
 
-export default function SignUp() {
+export default function SignUp({ navigation }) {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -19,7 +19,7 @@ export default function SignUp() {
     <SafeAreaView>
       <View style={styles.landingBody}>
         <View style={styles.header}>
-          <TouchableOpacity>
+          <TouchableOpacity onPress={() => navigation.goBack()}>
             <Image style={styles.headerImg} source={images.leftIcon} />
           </TouchableOpacity>
           <Text style={styles.headerHeading}>Sign Up</Text>
@@ -64,12 +64,18 @@ export default function SignUp() {
             />
           </View>
         </View>
-        <TouchableOpacity style={styles.rightArrowRedContainer}>
+        <TouchableOpacity
+          style={styles.rightArrowRedContainer}
+          onPress={() => navigation.navigate("LogIn")}
+        >
           <Text style={styles.rightArrowRedText}>Already have an account?</Text>
           <Image style={styles.rightArrowRed} source={images.rightArrowRed} />
         </TouchableOpacity>
 
-        <TouchableOpacity style={styles.signUpBtn}>
+        <TouchableOpacity
+          style={styles.signUpBtn}
+          onPress={() => navigation.navigate("Authentication")}
+        >
           <Text style={styles.signUpBtnText}>SIGN UP</Text>
         </TouchableOpacity>
 

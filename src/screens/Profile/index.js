@@ -14,7 +14,7 @@ import { styles } from "./style";
 import { colors } from "../../services";
 import Modal from "react-native-modal";
 
-export default function Profile() {
+export default function Profile({navigation}) {
   const [profileSettings, setProfileSettings] = useState([
     {
       logo: images.profileEdit,
@@ -62,7 +62,25 @@ export default function Profile() {
                 onPress={() => {
                   if (item.name === "Log out") {
                     handleLogout();
-                  }
+                  } else if (item.name === "Profile Edit") {
+                    navigation.navigate("EditMyProfile")
+                  } else if (item.name === "Inbox") {
+                    navigation.navigate("MessageList")
+                  } else if (item.name === "Order") {
+                    navigation.navigate("Order")
+                  } else if (item.name === "Payment") {
+                    navigation.navigate("AddPaymentMethod")
+                  } else if (item.name === "Settings") {
+                    navigation.navigate("EditProfile")
+                  } else if (item.name === "Help Center") {
+                    navigation.navigate("HelpCenter")
+                  } else if (item.name === "Address") {
+                    navigation.navigate("Book")
+                  } else if (item.name === "Privacy and Policy") {
+                    navigation.navigate("Privacy")
+                  }  else if (item.name === "Invite Friends") {
+                    navigation.navigate("InviteFriends")
+                  } 
                 }}
               >
                 <Image source={item.logo} style={styles.iconSty} />

@@ -151,7 +151,7 @@ export default function Booking() {
     <SafeAreaView>
       <View style={styles.container}>
         <Header
-          //   backImage={images.backArrow}
+            backImage={images.backArrow}
           title={"Orders"}
           //   searchIcon={images.search}
         />

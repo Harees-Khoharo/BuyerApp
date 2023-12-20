@@ -56,68 +56,182 @@ import MyStore from "./src/screens/MyStore";
 import Products from "./src/screens/Products";
 import AddProduct from "./src/screens/AddProduct";
 import EditProduct from "./src/screens/EditProduct";
+import MainNavigator from "./src/services/config/navigation";
 
 export default function App() {
-  return (
-    <SafeAreaView>
-      {/* ------------------------ */}
-      {/* <Landing /> */}
-      {/* <SignUp /> */}
-      {/* <LogIn /> */}
-      {/* <ForgotPassword /> */}
-      {/* <Authentication /> */}
-      {/* <Verification /> */}
-      {/* <NewPassword /> */}
-       {/* <EnableLocationManual /> */}
-      {/* <EnableLocationNow /> */}
-      {/* <EnterYourLocation /> */}
-      {/* <CreateStore /> */}
-      {/* <CreateNewStore /> */}
-      {/* <MyStore /> */}
-      {/* <Products /> */}
-      {/* <AddProduct /> */}
-      {/* <EditProduct /> */}
-      {/* ------------------------ */}
+  return <MainNavigator />
+}
 
-      {/* <Checkout/> */}
-      {/* <PaymentMethods/> */}
-      {/* <ShippingAddresses/> */}
-      {/* <AddShippingAddress/> */}
-      {/* <Success/> */}
-      {/* <Home/> */}
-      {/* <Profile/> */}
-      {/* <Book/> */}
-      {/* <Information/> */}
-      {/* <CardInfo/> */}
-      {/* <Notification/> */}
-      {/* <Order/> */}
-      {/* <EditMyProfile/> */}
-      {/* <EditProfile /> */}
-      {/* <AddPaymentMethod /> */}
-      {/* <PasswordManager /> */}
-      {/* <HelpCenter/> */}
-      {/* <Privacy/> */}
-      {/* <InviteFriends /> */}
-      {/* <MessageList /> */}
-      {/* <ChatRequest /> */}
-      {/* <Booking /> */}
-      {/* <Favourites /> */}
-      {/* <MyCart /> */}
-      {/* <Search /> */}
-      {/* <Categories /> */}
-      {/* <CategoryItems /> */}
-      {/* <Alcohol /> */}
-      {/* <Appliances/> */}
-      {/* <Toiletries /> */}
-      {/* <Wears /> */}
-      {/* <Accessories /> */}
-      {/* <Electronics /> */}
-      {/* <VisualSearch /> */}
-      {/* <ProductDetail /> */}
-      {/* <Filter /> */}
-      {/* <TrackOrder /> */}
-      <RatingAndReview />
-    </SafeAreaView>
-     
-  );
+// <SafeAreaView>
+{
+  /* ------------------------ */
+}
+{
+  /* <Landing /> */
+}
+{
+  /* <SignUp /> */
+}
+{
+  /* <LogIn /> */
+}
+{
+  /* <ForgotPassword /> */
+}
+{
+  /* <Authentication /> */
+}
+{
+  /* <Verification /> */
+}
+{
+  /* <NewPassword /> */
+}
+{
+  /* <EnableLocationManual /> */
+}
+{
+  /* <EnableLocationNow /> */
+}
+{
+  /* <EnterYourLocation /> */
+}
+{
+  /* <CreateStore /> */
+}
+{
+  /* <CreateNewStore /> */
+}
+{
+  /* <MyStore /> */
+}
+{
+  /* <Products /> */
+}
+{
+  /* <AddProduct /> */
+}
+{
+  /* <EditProduct /> */
+}
+{
+  /* ------------------------ */
+}
+
+{
+  /* <Checkout/> */
+}
+{
+  /* <PaymentMethods/> */
+}
+{
+  /* <ShippingAddresses/> */
+}
+{
+  /* <AddShippingAddress/> */
+}
+{
+  /* <Success/> */
+}
+{
+  /* <Home/> */
+}
+{
+  /* <Profile/> */
+}
+{
+  /* <Book/> */
+}
+{
+  /* <Information/> */
+}
+{
+  /* <CardInfo/> */
+}
+{
+  /* <Notification/> */
+}
+{
+  /* <Order/> */
+}
+{
+  /* <EditMyProfile/> */
+}
+{
+  /* <EditProfile /> */
+}
+{
+  /* <AddPaymentMethod /> */
+}
+{
+  /* <PasswordManager /> */
+}
+{
+  /* <HelpCenter/> */
+}
+{
+  /* <Privacy/> */
+}
+{
+  /* <InviteFriends /> */
+}
+{
+  /* <MessageList /> */
+}
+{
+  /* <ChatRequest /> */
+}
+{
+  /* <Booking /> */
+}
+{
+  /* <Favourites /> */
+}
+{
+  /* <MyCart /> */
+}
+{
+  /* <Search /> */
+}
+{
+  /* <Categories /> */
+}
+{
+  /* <CategoryItems /> */
+}
+{
+  /* <Alcohol /> */
+}
+{
+  /* <Appliances/> */
+}
+{
+  /* <Toiletries /> */
+}
+{
+  /* <Wears /> */
+}
+{
+  /* <Accessories /> */
+}
+{
+  /* <Electronics /> */
+}
+{
+  /* <VisualSearch /> */
+}
+{
+  /* <ProductDetail /> */
+}
+{
+  /* <Filter /> */
+}
+{
+  /* <TrackOrder /> */
+}
+{
+  /* <RatingAndReview /> */
+}
+{
+  /* </SafeAreaView> */
 }

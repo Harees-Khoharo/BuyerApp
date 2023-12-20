@@ -11,7 +11,7 @@ import React, { useState } from "react";
 import { styles } from "./style";
 import images from "../../services/utilities/images";
 
-export default function EditProfile() {
+export default function EditProfile({navigation}) {
   return (
     <SafeAreaView style={styles.MainContainer}>
       <ScrollView>
@@ -23,7 +23,7 @@ export default function EditProfile() {
         </View>
         <View style={styles.top}>
 
-        <TouchableOpacity>
+        <TouchableOpacity onPress={() => navigation.navigate("Notification")}>
           <View style={styles.passViewMain}>
             <View style={styles.bottomViewAllingment}>
               <View style={styles.Img}>
@@ -39,8 +39,8 @@ export default function EditProfile() {
               />
             </View>
           </View>
-        </TouchableOpacity>
-        <TouchableOpacity>
+        </TouchableOpacity >
+        <TouchableOpacity onPress={() => navigation.navigate("PasswordManager")}>
           <View style={styles.passViewMain}>
             <View style={styles.bottomViewAllingment}>
               <View style={styles.Img}>

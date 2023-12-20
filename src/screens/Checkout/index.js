@@ -11,7 +11,7 @@ import Header from "../../components/Header";
 import images from "../../services/utilities/images";
 import { colors, sizes } from "../../services";
 
-export default function Checkout() {
+export default function Checkout({navigation}) {
   return (
     <SafeAreaView
       style={{ backgroundColor: colors.white, height: sizes.screenHeight }}
@@ -22,7 +22,7 @@ export default function Checkout() {
         <View style={styles.MainCartView}>
           <View style={styles.firstCart}>
             <Text style={styles.firstCartText}>Jane Doe</Text>
-            <TouchableOpacity>
+            <TouchableOpacity onPress={() => navigation.navigate("ShippingAddresses")} >
               <Text style={styles.firstCartText1}>Change</Text>
             </TouchableOpacity>
           </View>
@@ -33,7 +33,7 @@ export default function Checkout() {
         </View>
         <View style={styles.secondRow}>
           <Text style={styles.secondRowText}>Payment</Text>
-          <TouchableOpacity>
+          <TouchableOpacity onPress={() => navigation.navigate("PaymentMethods")}>
             <Text style={styles.secondRowText2}>Change</Text>
           </TouchableOpacity>
         </View>
@@ -68,7 +68,7 @@ export default function Checkout() {
           <Text style={styles.priceText2}>Summary:</Text>
           <Text style={styles.priceNumber2}>$127</Text>
         </View>
-        <TouchableOpacity style={styles.bottomBtn}>
+        <TouchableOpacity style={styles.bottomBtn}  onPress={() => navigation.navigate("Success")}>
           <Text style={styles.bottomBtnText}>Submit Order</Text>
         </TouchableOpacity>
       </View>

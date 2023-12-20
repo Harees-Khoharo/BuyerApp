@@ -25,7 +25,7 @@ export default function AddPaymentMethod() {
           <View style={styles.labelView}>
             <Text style={styles.creditText}>Credit & Debit Card</Text>
           </View>
-          <TouchableOpacity>
+          <TouchableOpacity >
             <View style={styles.passViewMain}>
               <View style={styles.bottomViewAllingment}>
                 <View style={styles.Img}>

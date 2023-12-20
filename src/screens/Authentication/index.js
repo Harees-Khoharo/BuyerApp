@@ -11,14 +11,14 @@ import { styles } from "./style";
 import images from "../../services/utilities/images";
 import { colors } from "../../services";
 
-export default function Authentication() {
+export default function Authentication({ navigation }) {
   const [phone, setPhone] = useState("");
 
   return (
     <SafeAreaView>
       <View style={styles.landingBody}>
         <View style={styles.header}>
-          <TouchableOpacity>
+          <TouchableOpacity onPress={() => navigation.goBack()}>
             <Image style={styles.headerImg} source={images.leftIcon} />
           </TouchableOpacity>
           <Text style={styles.headerHeading}>Authentication</Text>
@@ -41,7 +41,10 @@ export default function Authentication() {
           </View>
         </View>
 
-        <TouchableOpacity style={styles.nextIconContainer}>
+        <TouchableOpacity
+          style={styles.nextIconContainer}
+          onPress={() => navigation.navigate("Verification")}
+        >
           <Image style={styles.nextIcon} source={images.nextIcon} />
         </TouchableOpacity>
       </View>

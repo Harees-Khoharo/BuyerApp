@@ -12,7 +12,7 @@ import images from "../../services/utilities/images";
 import { colors } from "../../services";
 import Feather from "react-native-vector-icons/Feather";
 
-export default function NewPassword() {
+export default function NewPassword({navigation}) {
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const [hidePassword, setHidePassword] = useState(false);
@@ -80,7 +80,7 @@ export default function NewPassword() {
           </TouchableOpacity>
         </View>
 
-        <TouchableOpacity style={styles.nextIconContainer}>
+        <TouchableOpacity style={styles.nextIconContainer} onPress={()=> navigation.navigate('LogIn')}>
           <Image style={styles.nextIcon} source={images.nextIcon} />
         </TouchableOpacity>
       </View>

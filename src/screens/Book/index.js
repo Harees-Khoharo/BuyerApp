@@ -11,7 +11,7 @@ import Header from "../../components/Header";
 import images from "../../services/utilities/images";
 import { colors, sizes } from "../../services";
 
-export default function Book() {
+export default function Book({navigation}) {
   return (
     <SafeAreaView
       style={{ backgroundColor: colors.white, height: sizes.screenHeight }}
@@ -23,7 +23,7 @@ export default function Book() {
       />
       <Image source={images.book} style={styles.bookImg} />
       <Text style={styles.bookText}>You have not added any address yet</Text>
-      <TouchableOpacity style={styles.modalBottomBtn}>
+      <TouchableOpacity style={styles.modalBottomBtn}  onPress={() => navigation.navigate("Information")}>
         <Text style={styles.bottomBtnText}>Add new address</Text>
       </TouchableOpacity>
     </SafeAreaView>

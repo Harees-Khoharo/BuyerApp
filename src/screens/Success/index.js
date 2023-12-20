@@ -9,7 +9,7 @@ import React from "react";
 import { styles } from "./style";
 import images from "../../services/utilities/images";
 
-export default function Success() {
+export default function Success({navigation}) {
   return (
     <SafeAreaView>
       <View style={styles.container}>
@@ -21,10 +21,10 @@ export default function Success() {
           </Text>
           <Text style={styles.textView1}>nearest Teader soon.</Text>
           <Text style={styles.textView1}>Thank you for choosing our app!</Text>
-          <TouchableOpacity style={styles.bottomBtn}>
+          <TouchableOpacity style={styles.bottomBtn} onPress={() => navigation.navigate("Home")}>
             <Text style={styles.bottomBtnText}>CONTINUE SHOPPING</Text>
           </TouchableOpacity>
-          <TouchableOpacity style={styles.bottomBtn1}>
+          <TouchableOpacity style={styles.bottomBtn1} onPress={() => navigation.navigate("Booking")}>
             <Text style={styles.bottomBtnText1}>View Order Request</Text>
           </TouchableOpacity>
         </View>

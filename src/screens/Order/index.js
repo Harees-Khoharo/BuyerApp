@@ -11,7 +11,7 @@ import images from "../../services/utilities/images";
 import { styles } from "./style";
 import { colors, sizes } from "../../services";
 
-export default function Order() {
+export default function Order({navigation}) {
   const [onOrder, setOnOrder] = useState("OngoingOrders");
   return (
     <SafeAreaView
@@ -42,7 +42,7 @@ export default function Order() {
               </Text>
               <Text style={styles.text1}>thier state anytime.</Text>
             </View>
-            <TouchableOpacity style={styles.btnView}>
+            <TouchableOpacity style={styles.btnView}  onPress={() => navigation.navigate("Home")}>
               <Text style={styles.btnText}>Continue shopping</Text>
             </TouchableOpacity>
           </View>
@@ -56,7 +56,10 @@ export default function Order() {
               </Text>
               <Text style={styles.text1}>thier state anytime.</Text>
             </View>
-            <TouchableOpacity style={styles.btnView}>
+            <TouchableOpacity
+              style={styles.btnView}
+              onPress={() => navigation.navigate("Home")}
+            >
               <Text style={styles.btnText}>Continue shopping</Text>
             </TouchableOpacity>
           </View>

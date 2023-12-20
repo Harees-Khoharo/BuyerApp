@@ -17,7 +17,7 @@ import {
   useClearByFocusCell,
 } from "react-native-confirmation-code-field";
 
-export default function Verification() {
+export default function Verification({navigation}) {
   const [value, setValue] = useState("");
   const [minutes, setMinutes] = useState(0);
   const [seconds, setSeconds] = useState(60);
@@ -52,7 +52,7 @@ export default function Verification() {
     <SafeAreaView>
       <View style={styles.landingBody}>
         <View style={styles.header}>
-          <TouchableOpacity>
+          <TouchableOpacity onPress={() => navigation.goBack()}>
             <Image style={styles.headerImg} source={images.leftIcon} />
           </TouchableOpacity>
           <Text style={styles.headerHeading}>Verification</Text>
@@ -93,7 +93,7 @@ export default function Verification() {
           )}
         </View>
 
-        <TouchableOpacity style={styles.nextIconContainer}>
+        <TouchableOpacity style={styles.nextIconContainer} onPress={()=> navigation.navigate('EnableLocationManual')}>
           <Image style={styles.nextIcon} source={images.nextIcon} />
         </TouchableOpacity>
       </View>

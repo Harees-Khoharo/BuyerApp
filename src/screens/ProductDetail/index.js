@@ -14,13 +14,16 @@ import Header from "../../components/Header";
 import images from "../../services/utilities/images";
 import { colors, sizes } from "../../services";
 
-export default function ProductDetail() {
+export default function ProductDetail({ navigation }) {
   return (
     <SafeAreaView>
       <ScrollView style={styles.mainContainer}>
         <View>
           <View style={styles.btnContainer}>
-            <TouchableOpacity style={styles.backBtnView}>
+            <TouchableOpacity
+              style={styles.backBtnView}
+              onPress={() => navigation.goBack()}
+            >
               <Image source={images.backBtn2} style={styles.backBtn} />
             </TouchableOpacity>
             <TouchableOpacity style={styles.shareBtnView}>
@@ -37,7 +40,10 @@ export default function ProductDetail() {
           <View style={styles.bottom}>
             <View style={[styles.row, styles.spaceBetween, styles.padding]}>
               <Text style={styles.heading}>Kaftani</Text>
-              <TouchableOpacity style={styles.btnView}>
+              <TouchableOpacity
+                style={styles.btnView}
+                onPress={() => navigation.navigate("MyCart")}
+              >
                 <Text style={styles.btnText}>Add to cart</Text>
               </TouchableOpacity>
             </View>
@@ -112,9 +118,7 @@ export default function ProductDetail() {
                 <Text style={[styles.text, styles.bold]}>
                   {"   "}93.4% Positive Feedback
                 </Text>
-                <Text style={[styles.text, styles.bold]}>
-                  700 Followers
-                </Text>
+                <Text style={[styles.text, styles.bold]}>700 Followers</Text>
               </View>
             </View>
             <View
@@ -162,21 +166,22 @@ export default function ProductDetail() {
               </TouchableOpacity>
             </View>
             <View style={styles.bottomContainer}>
-              <View style={{alignItems: "center"}}>
-
-                <Image source={images.store} style={styles.store}/>
-              <Text style={{ color: colors.black }}>Store</Text>
-              </View>
+              <TouchableOpacity
+                style={{ alignItems: "center" }}
+                onPress={() => navigation.goBack()}
+              >
+                <Image source={images.store} style={styles.store} />
+                <Text style={{ color: colors.black }}>Store</Text>
+              </TouchableOpacity>
               <View style={styles.bottomBtnRow}>
-                <TouchableOpacity style={styles.bottomCartBtnView}>
-                  <Text style={styles.bottomCartBtnSty}>
-                    Add to cart
-                  </Text>
+                <TouchableOpacity
+                  style={styles.bottomCartBtnView}
+                  onPress={() => navigation.navigate("MyCart")}
+                >
+                  <Text style={styles.bottomCartBtnSty}>Add to cart</Text>
                 </TouchableOpacity>
                 <TouchableOpacity style={styles.bottomCartBtnView1}>
-                  <Text style={styles.bottomCartBtnSty}>
-                    Buy Now
-                  </Text>
+                  <Text style={styles.bottomCartBtnSty}>Buy Now</Text>
                 </TouchableOpacity>
               </View>
             </View>

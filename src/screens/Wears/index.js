@@ -11,12 +11,12 @@ import { styles } from "./style";
 import images from "../../services/utilities/images";
 import { colors } from "../../services";
 
-export default function Wears() {
+export default function Wears({navigation}) {
   return (
     <SafeAreaView>
       <View style={styles.topMainContainer}>
         <Image source={images.wears2} style={styles.headerImg} />
-        <TouchableOpacity style={styles.headerBtnView}>
+        <TouchableOpacity style={styles.headerBtnView}   onPress={() => navigation.goBack()}>
           <Image source={images.backbtn} style={styles.headerBackBtn} />
         </TouchableOpacity>
         <View style={styles.margin}>

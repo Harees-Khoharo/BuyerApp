@@ -56,7 +56,7 @@ export const styles = StyleSheet.create({
     marginTop: sizes.screenHeight * 0.05,
     borderRadius: sizes.screenWidth * 0.1,
     height: sizes.screenHeight * 0.06,
-    backgroundColor: colors.btnBlue,
+    backgroundColor: colors.black,
     width: sizes.screenHeight * 0.44,
     justifyContent: "center",
   },

@@ -7,6 +7,7 @@ import {
 } from "react-native";
 import React from "react";
 import { styles } from "./style";
+import { useNavigation } from "@react-navigation/native";
 
 export default function Header({
   backImage,
@@ -14,10 +15,12 @@ export default function Header({
   addToCartImage,
   searchIcon,
 }) {
+  const navigation = useNavigation();
+
   return (
     <SafeAreaView>
       <View style={styles.headerView}>
-        <TouchableOpacity>
+        <TouchableOpacity onPress={() => navigation.goBack()}>
           <Image source={backImage} style={styles.imgSty} />
         </TouchableOpacity>
         <Text style={styles.headerText}>{title}</Text>

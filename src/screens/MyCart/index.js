@@ -11,10 +11,10 @@ import React, { useState } from "react";
 import { styles } from "./style";
 import images from "../../services/utilities/images";
 import Header from "../../components/Header";
-import { colors } from "../../services";
+import { colors, sizes } from "../../services";
 import Modal from "react-native-modal";
 
-export default function MyCart() {
+export default function MyCart({ navigation }) {
   const [quantity, setQuantity] = useState(1);
   const [isModalVisible, setIsModalVisible] = useState(false);
   const [isShowRemoveModal, setIsShowRemoveModal] = useState(false);
@@ -50,7 +50,9 @@ export default function MyCart() {
             </View>
           </View>
           <View style={styles.lastView}>
-            <TouchableOpacity>
+            <TouchableOpacity
+              onPress={() => setIsShowRemoveModal(!isShowRemoveModal)}
+            >
               <Image source={images.threeDot} style={styles.threeDotSty} />
             </TouchableOpacity>
             <Text style={styles.prices}>$51</Text>
@@ -81,7 +83,9 @@ export default function MyCart() {
             </View>
           </View>
           <View style={styles.lastView}>
-            <TouchableOpacity>
+            <TouchableOpacity
+              onPress={() => setIsShowRemoveModal(!isShowRemoveModal)}
+            >
               <Image source={images.threeDot} style={styles.threeDotSty} />
             </TouchableOpacity>
 
@@ -113,11 +117,15 @@ export default function MyCart() {
             </View>
           </View>
           <View style={styles.lastView}>
-            <TouchableOpacity>
+            <TouchableOpacity
+              onPress={() => setIsShowRemoveModal(!isShowRemoveModal)}
+            >
               <Image source={images.threeDot} style={styles.threeDotSty} />
             </TouchableOpacity>
 
-            <Text style={styles.prices}>$43</Text>
+            <Text style={[styles.prices, { right: sizes.screenWidth * 0.03 }]}>
+              $43
+            </Text>
           </View>
         </View>
         <View style={styles.row4}>
@@ -136,7 +144,7 @@ export default function MyCart() {
         </View>
         <TouchableOpacity
           style={styles.btnView}
-          onPress={() => setIsShowRemoveModal(!isShowRemoveModal)}
+          onPress={() => navigation.navigate("Checkout")}
         >
           <Text style={styles.btnText}>CHECK OUT</Text>
         </TouchableOpacity>

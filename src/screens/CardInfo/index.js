@@ -13,7 +13,7 @@ import { styles } from "./style";
 import { colors, sizes } from "../../services";
 import Modal from "react-native-modal";
 
-export default function CardInfo() {
+export default function CardInfo({navigation}) {
   const [threeDotClick, setThreeDotClick] = useState(false);
   const [isModalVisible, setIsModalVisible] = useState(false);
   return (
@@ -84,7 +84,7 @@ export default function CardInfo() {
               />
             </View>
           </View>
-          <TouchableOpacity style={styles.modalBottomBtn}>
+          <TouchableOpacity style={styles.modalBottomBtn}  onPress={() => navigation.navigate("Profile")}>
             <Text style={styles.bottomBtnText}>Next</Text>
           </TouchableOpacity>
         </View>

@@ -1,6 +1,5 @@
-import React from "react";
 import { NavigationContainer } from "@react-navigation/native";
-import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import { createStackNavigator } from "@react-navigation/stack";
 
 import Checkout from "../../screens/Checkout";
 import MyCart from "../../screens/MyCart";
@@ -56,11 +55,17 @@ import MyStore from "../../screens/MyStore";
 import Products from "../../screens/Products";
 import AddProduct from "../../screens/AddProduct";
 import EditProduct from "../../screens/EditProduct";
+
+const Stack = createStackNavigator();
+
 export default function MainNavigator() {
-  const Stack = createNativeStackNavigator();
   return (
     <NavigationContainer>
-      <Stack.Navigator screenOptions={{ headerShown: false }}>
+      <Stack.Navigator screenOptions={{ headerShown: false }}
+      >
+        <Stack.Screen name="Profile" component={Profile} />
+
+        <Stack.Screen name="Landing" component={Landing} />
         <Stack.Screen name="Checkout" component={Checkout} />
         <Stack.Screen name="MyCart" component={MyCart} />
         <Stack.Screen name="PaymentMethods" component={PaymentMethods} />
@@ -71,7 +76,6 @@ export default function MainNavigator() {
         />
         <Stack.Screen name="Success" component={Success} />
         <Stack.Screen name="Home" component={Home} />
-        <Stack.Screen name="Profile" component={Profile} />
         <Stack.Screen name="Book" component={Book} />
         <Stack.Screen name="Information" component={Information} />
         <Stack.Screen name="CardInfo" component={CardInfo} />
@@ -86,7 +90,6 @@ export default function MainNavigator() {
         <Stack.Screen name="MessageList" component={MessageList} />
         <Stack.Screen name="ChatRequest" component={ChatRequest} />
         <Stack.Screen name="Booking" component={Booking} />
-        <Stack.Screen name="Landing" component={Landing} />
         <Stack.Screen name="SignUp" component={SignUp} />
         <Stack.Screen name="LogIn" component={LogIn} />
         <Stack.Screen name="ForgotPassword" component={ForgotPassword} />

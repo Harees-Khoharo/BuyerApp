@@ -12,7 +12,7 @@ import images from "../../services/utilities/images";
 import { styles } from "./style";
 import { colors, sizes } from "../../services";
 
-export default function Information() {
+export default function Information({navigation}) {
   const [tabName, setTabName] = useState(false);
   return (
     <SafeAreaView
@@ -76,7 +76,7 @@ export default function Information() {
             </TouchableOpacity>
             <Text style={styles.checkBoxText}>Set as default address</Text>
           </View>
-          <TouchableOpacity style={styles.modalBottomBtn}>
+          <TouchableOpacity style={styles.modalBottomBtn}  onPress={() => navigation.navigate("CardInfo")}>
             <Text style={styles.bottomBtnText}>Next</Text>
           </TouchableOpacity>
         </View>

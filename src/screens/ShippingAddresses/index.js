@@ -4,7 +4,7 @@ import Header from '../../components/Header'
 import { styles } from './style'
 import images from '../../services/utilities/images'
 
-export default function ShippingAddresses() {
+export default function ShippingAddresses({navigation}) {
   const [cardStatus, setCardStatus] = useState('');
 
   return (
@@ -90,7 +90,7 @@ export default function ShippingAddresses() {
           <Text style={styles.headingSty2}>Use as the shipping address </Text>
         </View>
           </View>
-          <TouchableOpacity>
+          <TouchableOpacity onPress={() => navigation.navigate("AddShippingAddress")}>
             <Image source={images.plus} style={styles.plusImg} />
           </TouchableOpacity>
         </View>

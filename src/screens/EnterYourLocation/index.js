@@ -12,12 +12,12 @@ import images from "../../services/utilities/images";
 import { colors } from "../../services";
 import Feather from "react-native-vector-icons/Feather";
 
-export default function EnterYourLocation() {
+export default function EnterYourLocation({navigation}) {
   return (
     <SafeAreaView>
       <View style={styles.landingBody}>
         <View style={styles.header}>
-          <TouchableOpacity>
+          <TouchableOpacity  onPress={() => navigation.goBack()}>
             <Image style={styles.headerImg} source={images.leftIcon} />
           </TouchableOpacity>
           <Text style={styles.headerHeading}>Enter Your Location</Text>

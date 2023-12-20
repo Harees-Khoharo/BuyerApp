@@ -12,7 +12,7 @@ import images from "../../services/utilities/images";
 import { colors } from "../../services";
 import Feather from "react-native-vector-icons/Feather";
 
-export default function EnableLocationManual() {
+export default function EnableLocationManual({ navigation }) {
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const [hidePassword, setHidePassword] = useState(false);
@@ -22,7 +22,7 @@ export default function EnableLocationManual() {
     <SafeAreaView>
       <View style={styles.landingBody}>
         <View style={styles.header}>
-          <TouchableOpacity>
+          <TouchableOpacity onPress={() => navigation.goBack()}>
             <Image style={styles.headerImg} source={images.leftIcon} />
           </TouchableOpacity>
           <Text style={styles.headerHeading}></Text>
@@ -39,11 +39,17 @@ export default function EnableLocationManual() {
           <Text style={styles.btnBlackText}>Enable Location</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity style={styles.btnWhite}>
+        <TouchableOpacity
+          style={styles.btnWhite}
+          onPress={() => navigation.navigate("EnterYourLocation")}
+        >
           <Text style={styles.btnWhiteText}>Enter Manually</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity style={styles.nextIconContainer}>
+        <TouchableOpacity
+          style={styles.nextIconContainer}
+          onPress={() => navigation.navigate("EnableLocationNow")}
+        >
           <Image style={styles.nextIcon} source={images.nextIcon} />
         </TouchableOpacity>
       </View>

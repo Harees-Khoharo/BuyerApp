@@ -14,7 +14,7 @@ import images from "../../services/utilities/images";
 import { Modal } from "react-native";
 import { colors, sizes } from "../../services";
 
-export default function PaymentMethods() {
+export default function PaymentMethods({navigation}) {
   const [cardStatus, setCardStatus] = useState("");
   const [checkBox, setCheckBox] = useState(false);
   const [isModalVisisble, setIsModalVisisble] = useState(false);
@@ -136,7 +136,10 @@ export default function PaymentMethods() {
                 </Text>
               </View>
               <TouchableOpacity
-                onPress={() => setIsModalVisisble(false)}
+                onPress={() => {
+                  setIsModalVisisble(false);
+                  navigation.navigate("Checkout");
+                }}
                 style={styles.modalBottomBtn}
               >
                 <Text style={styles.bottomBtnText}>ADD CARD</Text>
