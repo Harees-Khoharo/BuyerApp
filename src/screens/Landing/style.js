@@ -35,7 +35,7 @@ export const styles = StyleSheet.create({
     position: "absolute",
     bottom: sizes.screenHeight * 0.03,
     height: sizes.screenHeight * 0.07,
-    width: sizes.screenWidth * 0.7,
+    width: sizes.screenWidth * 0.86,
     alignItems: "center",
     justifyContent: "center",
     backgroundColor: colors.black,
@@ -54,5 +54,39 @@ export const styles = StyleSheet.create({
     fontSize: fontSize.h5,
     color: colors.white,
     fontWeight: "700",
+  },
+  textField:{
+    flexDirection:'row',
+    alignItems:'center',
+    alignSelf:'center',
+    // backgroundColor:'red',
+    width:sizes.screenWidth * 0.85,
+    // borderRadius: 20,
+    shadowColor: "#000000",
+    shadowOffset: {
+      width: 0,
+      height: 3,
+    },
+    shadowOpacity: 0.17,
+    shadowRadius: 3.05,
+    elevation: 4,
+    backgroundColor: colors.white,
+    paddingHorizontal:sizes.screenWidth * 0.03,
+    marginTop:sizes.screenHeight * 0.015
+  },
+  flagSiz:{
+    resizeMode:'contain',
+    width:sizes.screenWidth * 0.06,
+    height:sizes.screenHeight * 0.03,
+  },
+  dropDownSiz:{
+    resizeMode:'contain',
+    width:sizes.screenWidth * 0.04,
+    height:sizes.screenHeight * 0.04,
+  },
+  textInput:{
+    width:sizes.screenWidth * 0.65,
+    color:colors.black,
+    marginLeft:sizes.screenWidth * 0.01
   },
 });
