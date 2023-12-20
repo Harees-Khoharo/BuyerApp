@@ -14,7 +14,7 @@ import { styles } from "./style";
 import { colors } from "../../services";
 import Modal from "react-native-modal";
 
-export default function Profile({navigation}) {
+export default function Profile({ navigation }) {
   const [profileSettings, setProfileSettings] = useState([
     {
       logo: images.profileEdit,
@@ -23,6 +23,7 @@ export default function Profile({navigation}) {
     },
     { logo: images.message, name: "Inbox", arrow: images.rightArrow },
     { logo: images.order, name: "Order", arrow: images.rightArrow },
+    { logo: images.order, name: "Track Order", arrow: images.rightArrow },
     { logo: images.payment, name: "Payment", arrow: images.rightArrow },
     { logo: images.setting, name: "Settings", arrow: images.rightArrow },
     { logo: images.help, name: "Help Center", arrow: images.rightArrow },
@@ -63,24 +64,26 @@ export default function Profile({navigation}) {
                   if (item.name === "Log out") {
                     handleLogout();
                   } else if (item.name === "Profile Edit") {
-                    navigation.navigate("EditMyProfile")
+                    navigation.navigate("EditMyProfile");
                   } else if (item.name === "Inbox") {
-                    navigation.navigate("MessageList")
+                    navigation.navigate("MessageList");
                   } else if (item.name === "Order") {
-                    navigation.navigate("Order")
+                    navigation.navigate("Order");
                   } else if (item.name === "Payment") {
-                    navigation.navigate("AddPaymentMethod")
+                    navigation.navigate("AddPaymentMethod");
                   } else if (item.name === "Settings") {
-                    navigation.navigate("EditProfile")
+                    navigation.navigate("EditProfile");
                   } else if (item.name === "Help Center") {
-                    navigation.navigate("HelpCenter")
+                    navigation.navigate("HelpCenter");
                   } else if (item.name === "Address") {
-                    navigation.navigate("Book")
+                    navigation.navigate("Book");
                   } else if (item.name === "Privacy and Policy") {
-                    navigation.navigate("Privacy")
-                  }  else if (item.name === "Invite Friends") {
-                    navigation.navigate("InviteFriends")
-                  } 
+                    navigation.navigate("Privacy");
+                  } else if (item.name === "Invite Friends") {
+                    navigation.navigate("InviteFriends");
+                  } else if (item.name === "Track Order") {
+                    navigation.navigate("TrackOrder");
+                  }
                 }}
               >
                 <Image source={item.logo} style={styles.iconSty} />

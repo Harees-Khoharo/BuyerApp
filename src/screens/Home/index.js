@@ -42,9 +42,13 @@ export default function Home({ navigation }) {
           </View>
           <View style={styles.menuTopView}>
             <View style={styles.menuMainCont}>
+
+              <TouchableOpacity  onPress={() => navigation.navigate("Categories")}>
+
               <Text style={styles.menuText}>Menu Category</Text>
+              </TouchableOpacity>
               <TouchableOpacity
-                onPress={() => navigation.navigate("Categories")}
+                onPress={() => navigation.navigate("Filter")}
               >
                 <Image source={images.filter} style={styles.searchImg} />
               </TouchableOpacity>

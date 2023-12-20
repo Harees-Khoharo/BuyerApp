@@ -13,7 +13,7 @@ import images from "../../services/utilities/images";
 import { colors, sizes } from "../../services";
 import Feather from "react-native-vector-icons/Feather";
 
-export default function EditProduct() {
+export default function EditProduct({navigation}) {
   return (
     <SafeAreaView>
       <View style={styles.landingBody}>
@@ -208,7 +208,7 @@ export default function EditProduct() {
         </ScrollView>
 
         <Image style={styles.shadow} source={images.shadow} />
-        <TouchableOpacity style={styles.bottomBtn}>
+        <TouchableOpacity style={styles.bottomBtn}  onPress={() => navigation.navigate("MyTabs")}>
           <Text style={styles.bottomBtnText}>Edit Product</Text>
         </TouchableOpacity>
       </View>

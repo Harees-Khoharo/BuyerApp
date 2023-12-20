@@ -21,7 +21,7 @@ export default function Success({navigation}) {
           </Text>
           <Text style={styles.textView1}>nearest Teader soon.</Text>
           <Text style={styles.textView1}>Thank you for choosing our app!</Text>
-          <TouchableOpacity style={styles.bottomBtn} onPress={() => navigation.navigate("Home")}>
+          <TouchableOpacity style={styles.bottomBtn} onPress={() => navigation.navigate("MyTabs")}>
             <Text style={styles.bottomBtnText}>CONTINUE SHOPPING</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.bottomBtn1} onPress={() => navigation.navigate("Booking")}>

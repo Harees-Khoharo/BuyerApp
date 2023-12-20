@@ -42,7 +42,7 @@ export default function Order({navigation}) {
               </Text>
               <Text style={styles.text1}>thier state anytime.</Text>
             </View>
-            <TouchableOpacity style={styles.btnView}  onPress={() => navigation.navigate("Home")}>
+            <TouchableOpacity style={styles.btnView}  onPress={() => navigation.navigate("MyTabs")}>
               <Text style={styles.btnText}>Continue shopping</Text>
             </TouchableOpacity>
           </View>
@@ -58,7 +58,7 @@ export default function Order({navigation}) {
             </View>
             <TouchableOpacity
               style={styles.btnView}
-              onPress={() => navigation.navigate("Home")}
+              onPress={() => navigation.navigate("MyTabs")}
             >
               <Text style={styles.btnText}>Continue shopping</Text>
             </TouchableOpacity>

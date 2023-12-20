@@ -15,7 +15,7 @@ import { colors, sizes } from "../../services";
 import Modal from "react-native-modal";
 import StarRating from "react-native-star-rating";
 
-export default function RatingAndReview() {
+export default function RatingAndReview({ navigation }) {
   const [showWithPhoto, setShowWithPhoto] = useState(false);
   const [isModalVisible, setIsModalVisible] = useState(false);
   const [starCount, setStarCount] = useState(0);
@@ -195,9 +195,9 @@ export default function RatingAndReview() {
               disabled={false}
               maxStars={5}
               rating={starCount}
-              starStyle={{padding:sizes.screenWidth*0.02}}
-              emptyStarColor={'#9B9B9B'}
-              fullStarColor={'#FFBA49'}
+              starStyle={{ padding: sizes.screenWidth * 0.02 }}
+              emptyStarColor={"#9B9B9B"}
+              fullStarColor={"#FFBA49"}
               selectedStar={(rating) => onStarRatingPress(rating)}
             />
             <Text style={styles.modalText}>
@@ -217,7 +217,10 @@ export default function RatingAndReview() {
           </TouchableOpacity>
           <TouchableOpacity
             style={styles.modalBtnView1}
-            onPress={() => setIsModalVisible(false)}
+            onPress={() => {
+              setIsModalVisible(false);
+              navigation.navigate("MyTabs");
+            }}
           >
             <Text style={styles.modalBtn1}> SEND REVIEW</Text>
           </TouchableOpacity>

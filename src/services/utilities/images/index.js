@@ -178,6 +178,11 @@ import locationnn from "../../../assets/locationnn.png";
 import removeStore from "../../../assets/removeStore.png";
 import b from "../../../assets/b.png";
 import productImggg from "../../../assets/productImggg.png";
+import btmTaB1 from '../../../assets/btmTaB1.png';
+import btmTaB2 from '../../../assets/btmTaB2.png';
+import btmTaB3 from '../../../assets/btmTaB3.png';
+import btmTaB4 from '../../../assets/btmTaB4.png';
+import btmTaB5 from '../../../assets/btmTaB5.png';
 
 const images = {
   dhl,
@@ -360,6 +365,11 @@ const images = {
   removeStore,
   b,
   productImggg,
+  btmTaB1,
+  btmTaB2,
+  btmTaB3,
+  btmTaB4,
+  btmTaB5,
 };
 
 export default images;

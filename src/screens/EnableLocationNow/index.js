@@ -46,7 +46,7 @@ export default function EnableLocationNow({ navigation }) {
           <Text style={styles.btnWhiteText}>Not Now</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity style={styles.nextIconContainer} onPress={() => navigation.navigate("Home")}>
+        <TouchableOpacity style={styles.nextIconContainer} onPress={() => navigation.navigate("MyTabs")}>
           <Image style={styles.nextIcon} source={images.nextIcon} />
         </TouchableOpacity>
       </View>

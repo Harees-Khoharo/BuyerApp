@@ -58,7 +58,7 @@ export const styles = StyleSheet.create({
   },
 
   input: {
-    height: sizes.screenHeight * 0.046,
+    // height: sizes.screenHeight * 0.046,
     width: sizes.screenWidth * 0.7,
     color: colors.black,
     fontSize: fontSize.regular,

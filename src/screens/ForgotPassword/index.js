@@ -10,7 +10,7 @@ import {
 import { styles } from "./style";
 import images from "../../services/utilities/images";
 
-export default function ForgotPassword({navigation}) {
+export default function ForgotPassword({ navigation }) {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -19,7 +19,7 @@ export default function ForgotPassword({navigation}) {
     <SafeAreaView>
       <View style={styles.landingBody}>
         <View style={styles.header}>
-          <TouchableOpacity onPress={()=> navigation.goBack()}>
+          <TouchableOpacity onPress={() => navigation.goBack()}>
             <Image style={styles.headerImg} source={images.leftIcon} />
           </TouchableOpacity>
           <Text style={styles.headerHeading}>Forgot Password</Text>
@@ -41,11 +41,16 @@ export default function ForgotPassword({navigation}) {
           </View>
           <Image style={styles.grenTick} source={images.crossRedIcon} />
         </View>
-        <Text style={styles.textRed}>
-          * Not a valid emails address. Should be your@gmail.com
-        </Text>
+        {email.length > 3 && (
+          <Text style={styles.textRed}>
+            * Not a valid emails address. Should be your@gmail.com
+          </Text>
+        )}
 
-        <TouchableOpacity style={styles.signUpBtn} onPress={()=> navigation.navigate('NewPassword')}>
+        <TouchableOpacity
+          style={styles.signUpBtn}
+          onPress={() => navigation.navigate("NewPassword")}
+        >
           <Text style={styles.signUpBtnText}>SEND</Text>
         </TouchableOpacity>
       </View>

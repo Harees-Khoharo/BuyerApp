@@ -13,7 +13,7 @@ import images from "../../services/utilities/images";
 import { colors, sizes } from "../../services";
 import Feather from "react-native-vector-icons/Feather";
 
-export default function CreateNewStore() {
+export default function CreateNewStore({ navigation }) {
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const [hidePassword, setHidePassword] = useState(false);
@@ -93,7 +93,10 @@ export default function CreateNewStore() {
           <View style={{ height: sizes.screenHeight * 0.16 }}></View>
         </ScrollView>
         <Image style={styles.shadow} source={images.shadow} />
-        <TouchableOpacity style={styles.bottomBtn}>
+        <TouchableOpacity
+          style={styles.bottomBtn}
+          onPress={() => navigation.navigate("MyStore")}
+        >
           <Text style={styles.bottomBtnText}>Create</Text>
         </TouchableOpacity>
       </View>

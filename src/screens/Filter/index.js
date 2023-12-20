@@ -11,8 +11,7 @@ import { styles } from "./style";
 import Header from "../../components/Header";
 import images from "../../services/utilities/images";
 
-
-export default function Filter() {
+export default function Filter({ navigation }) {
   const [reviewStatus, setReviewStatus] = useState("");
 
   return (
@@ -60,7 +59,6 @@ export default function Filter() {
               </TouchableOpacity>
             </ScrollView>
           </View>
-          <Text style={styles.heading}>Review</Text>
           <View style={{ flex: 1, flexDirection: "row" }}>
             {/* <RangeSlider
     minValue={0}
@@ -90,7 +88,7 @@ export default function Filter() {
               <Image source={images.fiveStars} style={styles.starImg} />
               <Text style={styles.ratingeTxt}>4.0 - 4.5</Text>
               <Image
-                source={reviewStatus == "second" ?  images.btnOff: images.btnOn }
+                source={reviewStatus == "second" ? images.btnOff : images.btnOn}
                 style={styles.starImg2}
               />
             </View>
@@ -124,6 +122,17 @@ export default function Filter() {
                 style={styles.starImg2}
               />
             </View>
+          </TouchableOpacity>
+        </View>
+        <View style={styles.modalSecondView}>
+          <TouchableOpacity style={styles.modalBtnView}>
+            <Text style={styles.modalBtn}>Cancel</Text>
+          </TouchableOpacity>
+          <TouchableOpacity
+            style={styles.modalBtnView1}
+            onPress={() => navigation.navigate("RatingAndReview")}
+          >
+            <Text style={styles.modalBtn1}> Yes, Remove</Text>
           </TouchableOpacity>
         </View>
       </View>

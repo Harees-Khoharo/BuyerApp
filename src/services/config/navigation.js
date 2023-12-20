@@ -55,76 +55,87 @@ import MyStore from "../../screens/MyStore";
 import Products from "../../screens/Products";
 import AddProduct from "../../screens/AddProduct";
 import EditProduct from "../../screens/EditProduct";
+import TabNavigation from './TabNavigation';
 
 const Stack = createStackNavigator();
 
 export default function MainNavigator() {
   return (
     <NavigationContainer>
-      <Stack.Navigator screenOptions={{ headerShown: false }}
-      >
-        <Stack.Screen name="Profile" component={Profile} />
-
-        <Stack.Screen name="Landing" component={Landing} />
-        <Stack.Screen name="Checkout" component={Checkout} />
-        <Stack.Screen name="MyCart" component={MyCart} />
-        <Stack.Screen name="PaymentMethods" component={PaymentMethods} />
-        <Stack.Screen name="ShippingAddresses" component={ShippingAddresses} />
-        <Stack.Screen
-          name="AddShippingAddress"
-          component={AddShippingAddress}
-        />
-        <Stack.Screen name="Success" component={Success} />
-        <Stack.Screen name="Home" component={Home} />
-        <Stack.Screen name="Book" component={Book} />
-        <Stack.Screen name="Information" component={Information} />
-        <Stack.Screen name="CardInfo" component={CardInfo} />
-        <Stack.Screen name="EditMyProfile" component={EditMyProfile} />
-        <Stack.Screen name="Notification" component={Notification} />
-        <Stack.Screen name="Order" component={Order} />
-        <Stack.Screen name="HelpCenter" component={HelpCenter} />
-        <Stack.Screen name="Privacy" component={Privacy} />
-        <Stack.Screen name="EditProfile" component={EditProfile} />
-        <Stack.Screen name="AddPaymentMethod" component={AddPaymentMethod} />
-        <Stack.Screen name="InviteFriends" component={InviteFriends} />
-        <Stack.Screen name="MessageList" component={MessageList} />
-        <Stack.Screen name="ChatRequest" component={ChatRequest} />
-        <Stack.Screen name="Booking" component={Booking} />
-        <Stack.Screen name="SignUp" component={SignUp} />
-        <Stack.Screen name="LogIn" component={LogIn} />
-        <Stack.Screen name="ForgotPassword" component={ForgotPassword} />
-        <Stack.Screen name="Authentication" component={Authentication} />
-        <Stack.Screen name="Verification" component={Verification} />
-        <Stack.Screen name="NewPassword" component={NewPassword} />
-        <Stack.Screen name="PasswordManager" component={PasswordManager} />
-        <Stack.Screen name="Favourites" component={Favourites} />
-        <Stack.Screen name="Search" component={Search} />
-        <Stack.Screen name="Categories" component={Categories} />
-        <Stack.Screen name="CategoryItems" component={CategoryItems} />
-        <Stack.Screen name="Alcohol" component={Alcohol} />
-        <Stack.Screen name="Appliances" component={Appliances} />
-        <Stack.Screen name="Toiletries" component={Toiletries} />
-        <Stack.Screen name="Wears" component={Wears} />
-        <Stack.Screen name="Accessories" component={Accessories} />
-        <Stack.Screen name="Electronics" component={Electronics} />
-        <Stack.Screen name="Filter" component={Filter} />
-        <Stack.Screen name="TrackOrder" component={TrackOrder} />
-        <Stack.Screen name="RatingAndReview" component={RatingAndReview} />
-        <Stack.Screen name="VisualSearch" component={VisualSearch} />
-        <Stack.Screen name="ProductDetail" component={ProductDetail} />
-        <Stack.Screen
-          name="EnableLocationManual"
-          component={EnableLocationManual}
-        />
-        <Stack.Screen name="EnableLocationNow" component={EnableLocationNow} />
-        <Stack.Screen name="EnterYourLocation" component={EnterYourLocation} />
-        <Stack.Screen name="CreateStore" component={CreateStore} />
-        <Stack.Screen name="CreateNewStore" component={CreateNewStore} />
-        <Stack.Screen name="MyStore" component={MyStore} />
-        <Stack.Screen name="Products" component={Products} />
-        <Stack.Screen name="AddProduct" component={AddProduct} />
-        <Stack.Screen name="EditProduct" component={EditProduct} />
+      <Stack.Navigator screenOptions={{ headerShown: false }}>
+        <Stack.Screen name="MyStack" component={MyStack} />
       </Stack.Navigator>
     </NavigationContainer>
   );
 }
+
+const MyStack = () => {
+  return (
+    <Stack.Navigator screenOptions={{ headerShown: false }}>
+      <Stack.Screen name="Landing" component={Landing} />
+      <Stack.Screen name="MyTabs" component={MyTabs} />
+
+      <Stack.Screen name="Profile" component={Profile} />
+
+      <Stack.Screen name="Checkout" component={Checkout} />
+      <Stack.Screen name="MyCart" component={MyCart} />
+      <Stack.Screen name="PaymentMethods" component={PaymentMethods} />
+      <Stack.Screen name="ShippingAddresses" component={ShippingAddresses} />
+      <Stack.Screen name="AddShippingAddress" component={AddShippingAddress} />
+      <Stack.Screen name="Success" component={Success} />
+      <Stack.Screen name="Home" component={Home} />
+      <Stack.Screen name="Book" component={Book} />
+      <Stack.Screen name="Information" component={Information} />
+      <Stack.Screen name="CardInfo" component={CardInfo} />
+      <Stack.Screen name="EditMyProfile" component={EditMyProfile} />
+      <Stack.Screen name="Notification" component={Notification} />
+      <Stack.Screen name="Order" component={Order} />
+      <Stack.Screen name="HelpCenter" component={HelpCenter} />
+      <Stack.Screen name="Privacy" component={Privacy} />
+      <Stack.Screen name="EditProfile" component={EditProfile} />
+      <Stack.Screen name="AddPaymentMethod" component={AddPaymentMethod} />
+      <Stack.Screen name="InviteFriends" component={InviteFriends} />
+      <Stack.Screen name="MessageList" component={MessageList} />
+      <Stack.Screen name="ChatRequest" component={ChatRequest} />
+      <Stack.Screen name="Booking" component={Booking} />
+      <Stack.Screen name="SignUp" component={SignUp} />
+      <Stack.Screen name="LogIn" component={LogIn} />
+      <Stack.Screen name="ForgotPassword" component={ForgotPassword} />
+      <Stack.Screen name="Authentication" component={Authentication} />
+      <Stack.Screen name="Verification" component={Verification} />
+      <Stack.Screen name="NewPassword" component={NewPassword} />
+      <Stack.Screen name="PasswordManager" component={PasswordManager} />
+      <Stack.Screen name="Favourites" component={Favourites} />
+      <Stack.Screen name="Search" component={Search} />
+      <Stack.Screen name="Categories" component={Categories} />
+      <Stack.Screen name="CategoryItems" component={CategoryItems} />
+      <Stack.Screen name="Alcohol" component={Alcohol} />
+      <Stack.Screen name="Appliances" component={Appliances} />
+      <Stack.Screen name="Toiletries" component={Toiletries} />
+      <Stack.Screen name="Wears" component={Wears} />
+      <Stack.Screen name="Accessories" component={Accessories} />
+      <Stack.Screen name="Electronics" component={Electronics} />
+      <Stack.Screen name="Filter" component={Filter} />
+      <Stack.Screen name="TrackOrder" component={TrackOrder} />
+      <Stack.Screen name="RatingAndReview" component={RatingAndReview} />
+      <Stack.Screen name="VisualSearch" component={VisualSearch} />
+      <Stack.Screen name="ProductDetail" component={ProductDetail} />
+      <Stack.Screen
+        name="EnableLocationManual"
+        component={EnableLocationManual}
+      />
+      <Stack.Screen name="EnableLocationNow" component={EnableLocationNow} />
+      <Stack.Screen name="EnterYourLocation" component={EnterYourLocation} />
+      <Stack.Screen name="CreateStore" component={CreateStore} />
+      <Stack.Screen name="CreateNewStore" component={CreateNewStore} />
+      <Stack.Screen name="MyStore" component={MyStore} />
+      <Stack.Screen name="Products" component={Products} />
+      <Stack.Screen name="AddProduct" component={AddProduct} />
+      <Stack.Screen name="EditProduct" component={EditProduct} />
+    </Stack.Navigator>
+  );
+};
+
+const MyTabs = () => {
+  return <TabNavigation />;
+};

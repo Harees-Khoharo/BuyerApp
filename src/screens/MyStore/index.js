@@ -12,7 +12,7 @@ import images from "../../services/utilities/images";
 import { colors } from "../../services";
 import Feather from "react-native-vector-icons/Feather";
 
-export default function MyStore() {
+export default function MyStore({ navigation }) {
   return (
     <SafeAreaView>
       <View style={styles.landingBody}>
@@ -41,7 +41,10 @@ export default function MyStore() {
         </TouchableOpacity>
 
         <Text style={styles.textBold}>You don't have any products</Text>
-        <TouchableOpacity style={styles.btnWhite}>
+        <TouchableOpacity
+          style={styles.btnWhite}
+          onPress={() => navigation.navigate("AddProduct")}
+        >
           <Text style={styles.btnWhiteText}>Add Product</Text>
         </TouchableOpacity>
       </View>
