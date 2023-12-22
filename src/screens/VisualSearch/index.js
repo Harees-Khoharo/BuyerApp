@@ -14,7 +14,7 @@ import Header from "../../components/Header";
 import images from "../../services/utilities/images";
 import { colors, sizes } from "../../services";
 
-export default function VisualSearch() {
+export default function VisualSearch({navigation}) {
   return (
     <SafeAreaView>
       <View style={styles.mainContainer}>
@@ -25,7 +25,7 @@ export default function VisualSearch() {
               Search for an item by taking a photo or uploading an image
             </Text>
             <View style={styles.btnTop}>
-              <TouchableOpacity style={styles.bottomBtn}>
+              <TouchableOpacity style={styles.bottomBtn} onPress={() => navigation.navigate('SearchByPhoto') }>
                 <Text style={styles.bottomBtnText}>TAKE A PHOTO</Text>
               </TouchableOpacity>
               <TouchableOpacity style={styles.bottomBtn1}>

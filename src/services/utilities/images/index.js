@@ -183,6 +183,12 @@ import btmTaB2 from '../../../assets/btmTaB2.png';
 import btmTaB3 from '../../../assets/btmTaB3.png';
 import btmTaB4 from '../../../assets/btmTaB4.png';
 import btmTaB5 from '../../../assets/btmTaB5.png';
+import sync from '../../../assets/sync.png';
+import cameraPhone from '../../../assets/cameraPhone.png';
+import flash from '../../../assets/flash.png';
+import cameraGirl from '../../../assets/cameraGirl.png';
+import buttonSearch from '../../../assets/buttonSearch.png';
+import girlLock from '../../../assets/girlLock.png';
 
 const images = {
   dhl,
@@ -192,11 +198,17 @@ const images = {
   backArrow,
   ratingReview,
   checkboxon,
+  girlLock,
   photo,
+  sync,
   photoTwo,
+  cameraGirl,
+  flash,
+  cameraPhone,
   photoThree,
   avatar,
   checkboxoff,
+  buttonSearch,
   card,
   cardTwo,
   timer,

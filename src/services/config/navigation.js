@@ -56,6 +56,8 @@ import Products from "../../screens/Products";
 import AddProduct from "../../screens/AddProduct";
 import EditProduct from "../../screens/EditProduct";
 import TabNavigation from './TabNavigation';
+import SearchByPhoto from "../../screens/SearchByPhoto";
+import MatchItems from "../../screens/MatchItems";
 
 const Stack = createStackNavigator();
 
@@ -119,6 +121,8 @@ const MyStack = () => {
       <Stack.Screen name="TrackOrder" component={TrackOrder} />
       <Stack.Screen name="RatingAndReview" component={RatingAndReview} />
       <Stack.Screen name="VisualSearch" component={VisualSearch} />
+      <Stack.Screen name="SearchByPhoto" component={SearchByPhoto} />
+      <Stack.Screen name="MatchItems" component={MatchItems} />
       <Stack.Screen name="ProductDetail" component={ProductDetail} />
       <Stack.Screen
         name="EnableLocationManual"
