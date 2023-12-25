@@ -48,6 +48,7 @@ export default function Profile({ navigation }) {
           backImage={images.backArrow}
           title={"Profile"}
           addToCartImage={images.bellicon}
+          goto={"Notification"}
         />
         <Image source={images.profile} style={styles.profile} />
         <Text style={styles.profileName}>Welcome Tanessah</Text>

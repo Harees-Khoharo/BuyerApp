@@ -206,7 +206,9 @@ export const styles = StyleSheet.create({
   },
   modalTextSty1:{
     color:colors.disabledBg3,
-    fontSize:fontSize.small
+    fontSize:fontSize.small,
+    // backgroundColor:'red',
+    width:sizes.screenWidth * 0.25
   },
   modalTextSty2:{
     color:colors.disabledBg3,

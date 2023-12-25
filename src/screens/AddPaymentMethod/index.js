@@ -11,7 +11,7 @@ import React, { useState } from "react";
 import { styles } from "./style";
 import images from "../../services/utilities/images";
 
-export default function AddPaymentMethod() {
+export default function AddPaymentMethod({navigation}) {
   return (
     <SafeAreaView style={styles.MainContainer}>
       <ScrollView>
@@ -25,8 +25,8 @@ export default function AddPaymentMethod() {
           <View style={styles.labelView}>
             <Text style={styles.creditText}>Credit & Debit Card</Text>
           </View>
-          <TouchableOpacity >
             <View style={styles.passViewMain}>
+          <TouchableOpacity  onPress={() => navigation.navigate('CardInfo')}>
               <View style={styles.bottomViewAllingment}>
                 <View style={styles.Img}>
                   <Image source={images.wallet} style={styles.passViewSty} />
@@ -34,8 +34,8 @@ export default function AddPaymentMethod() {
                 </View>
                 <Image source={images.add} style={styles.rightArrowIconSty} />
               </View>
-            </View>
           </TouchableOpacity>
+            </View>
 
           <View style={styles.height}></View>
         </View>

@@ -14,9 +14,13 @@ export default function Header({
   title,
   addToCartImage,
   searchIcon,
+  goto,
 }) {
   const navigation = useNavigation();
 
+  const handleGoto = ()=>{
+    navigation.navigate(goto)
+  }
   return (
     <SafeAreaView>
       <View style={styles.headerView}>
@@ -24,7 +28,7 @@ export default function Header({
           <Image source={backImage} style={styles.imgSty} />
         </TouchableOpacity>
         <Text style={styles.headerText}>{title}</Text>
-        <TouchableOpacity>
+        <TouchableOpacity onPress={goto && handleGoto}>
           <Image
             source={addToCartImage ? addToCartImage : searchIcon}
             style={styles.cartImgSty}
