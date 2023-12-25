@@ -12,6 +12,7 @@ import Profile from '../../screens/Profile';
 import Favourites from '../../screens/Favourites';
 import MyStore from '../../screens/MyStore';
 import CreateStore from '../../screens/CreateStore';
+import Categories from '../../screens/Categories';
 
 const Tab = createBottomTabNavigator();
 
@@ -51,7 +52,7 @@ export default function TabNavigation() {
       />
       <Tab.Screen
         name="Browse"
-        component={Home}
+        component={Categories}
         options={{
           tabBarIcon: ({focused}) => (
             <Image

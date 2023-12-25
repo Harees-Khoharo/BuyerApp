@@ -15,9 +15,12 @@ export const styles = StyleSheet.create({
     alignSelf: "center",
     bottom: 10,
   },
+  country:{
+    // backgroundColor:'red'
+  },
 
   heading: {
-    fontSize: fontSize.h3,
+    fontSize: fontSize.h5,
     color: colors.black,
     fontWeight: "700",
     marginLeft: sizes.screenWidth * 0.04,
@@ -33,7 +36,7 @@ export const styles = StyleSheet.create({
   bottomBtn: {
     alignSelf: "center",
     position: "absolute",
-    bottom: sizes.screenHeight * 0.03,
+    bottom: sizes.screenHeight * 0.05,
     height: sizes.screenHeight * 0.07,
     width: sizes.screenWidth * 0.86,
     alignItems: "center",
@@ -72,7 +75,7 @@ export const styles = StyleSheet.create({
     elevation: 4,
     backgroundColor: colors.white,
     paddingHorizontal:sizes.screenWidth * 0.03,
-    marginTop:sizes.screenHeight * 0.015
+    marginTop:sizes.screenHeight * 0.015,
   },
   flagSiz:{
     resizeMode:'contain',
@@ -87,6 +90,12 @@ export const styles = StyleSheet.create({
   textInput:{
     width:sizes.screenWidth * 0.65,
     color:colors.black,
-    marginLeft:sizes.screenWidth * 0.01
+    marginLeft:sizes.screenWidth * 0.01,
+    padding:sizes.screenHeight*0.02
   },
+  flagBottom:{
+    bottom:sizes.screenHeight*0.05,
+    left:sizes.screenWidth*0.02
+  }
+
 });
